@@ -2,13 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Login</title>
+  <title>Connexion</title>
   <link rel="stylesheet" href="page_login.css">
   <script src="script.js"></script>
-<nav>
 
-      
 
+  <nav class="main-nav">
+    <div class="logo">Beginner SLAY Memory</div>
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Jeu</a></li>
+        <li><a href="#">Score</a></li>
+        <li><a href="#">Nous contacter</a></li>
+    </ul>
 </nav>
      
 </head>
@@ -18,7 +24,7 @@
 
 
 <div class="image-container">
-    <h1>Login</h1>
+    <h1>Connexion</h1>
 
     </div>
 </div>
@@ -26,17 +32,34 @@
 
 
   <form method="POST" action="traitement.php">
+    <br>
         <input class="case"  placeholder="Email" required="required"><br><br>
         <input class="case"  placeholder="Mot de passe"  required="required" ><br><br>
         <br><br>
-        <input class="bouton" type="submit" value="Envoyer" onclick="window.location.href = 'https://fr.w3docs.com/';">Cliquez Ici>
+        <input class="bouton" type="submit" value="Envoyer">
+        <br><br><br><br><br><br>
     </form>
 </body>
 
 
 <footer>
-
-
-
+  <div><h2>Information</h2>
+    <P>Si vous souhaitez plus d'informations.</P>
+    <p class="one">Tel : <span>06 05 04 03 02</span><br/><br/>
+    Email : <span>support@powerofmemory.com</span><br/><br/>
+    Location : <span>Paris</span></p>
+    <a href="https://www.facebook.com/?locale=fr_FR"> <img src="https://www.iconsdb.com/icons/preview/orange/facebook-3-xxl.png" width=30px height=30px/></a>
+    <a href="https://twitter.com/?lang=fr"> <img src="https://www.iconsdb.com/icons/preview/orange/twitter-3-xxl.png" width=30px height=30px/></a>
+    <a href="https://www.google.fr/"> <img src="https://www.iconsdb.com/icons/preview/orange/google-plus-3-xxl.png" width=30px height=30px/></a>
+    <a href="https://www.pinterest.fr/"> <img src="https://www.iconsdb.com/icons/preview/orange/pinterest-3-xxl.png" width=30px height=30px/></a>
+    <a href="https://www.instagram.com/"> <img src="https://www.iconsdb.com/icons/preview/orange/instagram-3-xxl.png" width=30px height=30px/></a>
+    <br/><br/><br/><br/><br/>
+    <p>Copyright © 2023 Tous droits réservés</p></div>
+    <div><h2 class="two">Power Of Memory</h2><br/>
+    <ul class="two">
+        <li>Jouer !</li><br/>
+        <li>Les scores</li><br/>
+        <li>Nous contacter</li>
+    </ul></div>
 </footer>
 </html>

@@ -88,43 +88,6 @@ h1{
 
 
 
-footer{
-    background-color: rgba(14,11,38,255);
-    display: flex;
-    justify-content: space-evenly;
-    font-family: sans-serif;
-}
-h2{
-    color: white;
-}
-span{
-    color: rgb(145, 145, 145);
-}
-.one{
-    color: rgba(194,120,36,255);
-}
-ul {
-    list-style: none;
-}
-li::before {
-    content: "■"; color: rgba(194,120,36,255);
-}
-ul li:before{
-    color: rgba(194,120,36,255);
-    margin-right: 10px;
-}
-ul li{
-    color: rgb(143, 143, 143);
-}
-p{
-    color: rgb(143, 143, 143);
-}
-
-
-
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -182,7 +145,35 @@ flex: 1;
  margin-bottom: 1em;
 }
 
-a{
+
+footer{
+    background-color: rgba(14,11,38,255);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+h2{
     color: white;
-    text-decoration: none;
+}
+span{
+    color: rgb(145, 145, 145);
+}
+.one{
+    color: rgba(194,120,36,255);
+}
+ul {
+    list-style: none;
+}
+li::before {
+    content: "■"; color: rgba(194,120,36,255);
+}
+ul li:before{
+    color: rgba(194,120,36,255);
+    margin-right: 10px;
+}
+ul li{
+    color: rgb(143, 143, 143);
+}
+p{
+    color: rgb(143, 143, 143);
 }
