@@ -128,13 +128,32 @@ h1{
     background-color: #b95300; /* Green */
     color: rgb(0, 0, 0);
 }
+.difth{
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.bouttons_difth{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
 .difficult{
-    margin-left: 4%;
+    margin-left: 5%;
 }
-form{
-    display: flex;
+
+.carte {
+    background-image: url(img_memory/dos_de_carte.jpg);
+    background-size: cover;
+    width: 113px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
 }
-form.bouttons_difth{
+.tableau_carte{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: auto;
 }
