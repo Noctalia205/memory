@@ -2,13 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Page de contact</title>
-  <link rel="stylesheet" href="boutton.css">
+  <title>Contact</title>
+  <link rel="stylesheet" href="page_contact.css">
   <script src="script.js"></script>
-<nav>
-
-      
-
+  <nav class="main-nav">
+    <div class="logo"><a href="#">Beginner SLAY Memory</a></div>
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Jeu</a></li>
+        <li><a href="#">Score</a></li>
+        <li><a href="#">Nous contacter</a></li>
+    </ul>
 </nav>
      
 </head>
@@ -17,31 +21,102 @@
 
 
 
-<div class="image-container">
-    <img src="villefuturiste.jpg" alt="chats aigris" class="image">
-    <div class="texte-superpose">
-
-    </div>
+  <div class="image-container">
+    <h1>NOUS CONTACTER</h1>
 </div>
 
+  <br><br><br><br>
+
+
+
+    <div class="logo-main">
+        <div class="blue-square">
+          <p class="circle-orange">
+
+            <img  class="image_icone" src="https://www.iconsdb.com/icons/preview/white/mobile-phone-8-xxl.png" width=40px height=40px/></a>
+          </p>
+
+          <p class="txt_square">
+            06 05 04 03 02
+          </p>
+
+
+      </div>
+        <div class="blue-square">
+
+          <p class="circle-orange">
+
+            <img class="image_icone" src="https://www.iconsdb.com/icons/preview/white/message-outline-xxl.png" width=40px height=40px/></a>
+          </p>
+
+          <p class="txt_square">
+            jarjar@binks.com
+          </p>
+
+
+      </div>
+        <div class="blue-square">
+
+          <p class="circle-orange">
+
+            <img class="image_icone"  src="https://www.iconsdb.com/icons/preview/white/map-marker-2-xxl.png" width=40px height=40px/></a>
+          </p>
+
+          <p class="txt_square">
+            Bamako
+          </p>
+
+
+
+      </div>
+
+
+    </div>
+
+<br><br><br><br>
 
 
   <form method="POST" action="traitement.php">
-        <input class="case"  placeholder="Nom" required="required"><br><br>
-        <input class="case"  placeholder="Email"  required="required" ><br><br>
-        <input class="case"  placeholder="Sujet"  required="required" ><br><br>
 
-        <label placeholder="Message"></label><br>
-        <textarea id="Message"  placeholder="Message"  required="required" ></textarea><br><br>
+      <div class="flex">
+        <input class="case"  placeholder="Nom" required="required">
+        <input   class="case"  placeholder="Email"  required="required" >
+      </div> 
 
+      <div>
+        <input class="case"  placeholder="Sujet"  required="required" >
+      </div>
+
+        <div>
+        <textarea  placeholder="Message"  required="required" ></textarea>
+        </div>
+
+        <div>
         <input class="bouton" type="submit" value="Envoyer">
-    </form>
+        </div>
+      
+      </form>
 </body>
 
 
 <footer>
-
-
-
+  <div><h2>Information</h2>
+    <P>Si vous souhaitez plus d'informations.</P>
+    <p class="one">Tel : <span>06 05 04 03 02</span><br/><br/>
+    Email : <span>support@powerofmemory.com</span><br/><br/>
+    Location : <span>Paris</span></p><br>
+    <a href="https://www.facebook.com/?locale=fr_FR"> <img src="img_icones/icons8-facebook-circled-94.png" width=30px height=30px/></a>
+    <a href="https://twitter.com/?lang=fr"> <img src="img_icones/icons8-twitter-circled-94.png" width=30px height=30px/></a>
+    <a href="https://www.google.fr/"> <img src="img_icones/icons8-google-94.png" width=30px height=30px/></a>
+    <a href="https://www.pinterest.fr/"> <img src="img_icones/icons8-pinterest-94.png" width=30px height=30px/></a>
+    <a href="https://www.instagram.com/"> <img src="img_icones/icons8-instagram-94.png" width=30px height=30px/></a>
+    <br/><br/><br/><br/><br/>
+    <p>Copyright © 2023 Tous droits réservés</p><br></div>
+    <div><h2 class="two">Power Of Memory</h2><br/>
+    <ul class="two">
+        <li>Jouer !</li><br/>
+        <li>Les scores</li><br/>
+        <li>Nous contacter</li>
+    </ul></div>
 </footer>
 </html>
