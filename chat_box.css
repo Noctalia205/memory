@@ -1,0 +1,29 @@
+.chatbox-container {
+    background-color: green;
+    width: 290px;
+    height: 400px;
+    border-radius: 8%;
+    border: 200px black;
+    
+
+}
+
+.chatbox-hight {
+display: flex;
+background-color: #4171ff;
+text-align: center;
+
+
+}
+
+.chatbox-chat {
+
+
+
+}
+
+.chatbox-submit {
+
+
+    
+}
