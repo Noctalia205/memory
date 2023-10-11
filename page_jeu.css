@@ -1,0 +1,105 @@
+footer{
+    background-color: rgba(14,11,38,255);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+h2{
+    color: white;
+}
+span{
+    color: rgb(145, 145, 145);
+}
+.one{
+    color: rgba(194,120,36,255);
+}
+ul {
+    list-style: none;
+}
+li::before {
+    content: "■"; color: rgba(194,120,36,255);
+}
+ul li:before{
+    color: rgba(194,120,36,255);
+    margin-right: 10px;
+}
+ul li{
+    color: rgb(143, 143, 143);
+}
+p{
+    color: rgb(143, 143, 143);
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.write {
+    font-size: 30px;
+}
+
+
+.logo{
+    flex: 3;
+    font-family: "Poppins";
+    font-size: 20px;
+    
+}
+.main-nav {
+display: flex;
+color: white;
+padding: 1em;
+font-family:"Poppins";
+background-color:rgb(10, 0, 31);
+
+padding-top: 2%;
+}
+
+.main-nav > ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+.main-nav li {
+margin-right: 4em;
+}
+.main-nav > form {
+display: flex;
+justify-content: flex-end;
+flex: 1;
+}
+.main-nav input {
+flex: 1;
+}
+
+
+.main-nav ul {
+ flex-direction: row; /* Change this to 'column' to stack the links */
+ margin-bottom: 1em;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    color: rgba(16,14,46);
+    background-color: rgba(16,14,46);
+}
+h1{
+    color: white;
+    text-align: center;
+}
