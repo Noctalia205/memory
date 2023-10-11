@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh;
+    background: url('img/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.write {
+    font-size: 30px;
+}
+
+
+.logo{
+    flex: 3;
+    font-family: "Poppins";
+    font-size: 20px;
+    
+}
+.main-nav {
+display: flex;
+color: white;
+padding: 1em;
+font-family:"Poppins";
+background-color:rgb(0, 0, 0,0.5);
+
+padding-top: 2%;
+}
+
+.main-nav > ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+.main-nav li {
+margin-right: 4em;
+}
+.main-nav > form {
+display: flex;
+justify-content: flex-end;
+flex: 1;
+}
+.main-nav input {
+flex: 1;
+}
+
+
+.main-nav ul {
+ flex-direction: row; /* Change this to 'column' to stack the links */
+ margin-bottom: 1em;
+}
+
+
