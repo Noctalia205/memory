@@ -1,29 +1,173 @@
 .chatbox-container {
-    background-color: green;
+    background-color: white;
     width: 290px;
     height: 400px;
-    border-radius: 8%;
-    border: 200px black;
+    border-radius: 2%;
+    border: 2px solid black;
     
 
 }
 
-.chatbox-hight {
+
+.chatbox-high {
+
 display: flex;
 background-color: #4171ff;
 text-align: center;
+border-top-right-radius: 2%;
+border-top-left-radius: 2%;
 
 
 }
+
+
+.pp {
+
+    height: 18%;
+    width: 18%; 
+    justify-content: space-between;
+
+}
+
+.txt-top {
+
+    padding-top: .5px;
+
+
+}
+
 
 .chatbox-chat {
 
-
+padding-top: 70px;
+padding-left: 10px;
+padding: 0 5px;
 
 }
 
-.chatbox-submit {
+span {
+
+    font-size: 80%;
+
+}
+
+.name-user1 {
+
+    padding-left: 70%;
+    color: rgba(172, 172, 172, 0.795);
+    font-size: 50%;
+    margin-left: 15px;
+    margin-bottom: 1%;
+
+}
 
 
+
+.chat-user1 {
+
+    background-color: #4171ff;
+    width: 18%;
+    border-radius: 20%;
+    margin-left: 76%;
+    padding: 1%;
+    margin-top: 3%;
     
 }
+
+.chat-user1 span {
+
+    margin-left: 18%;
+    text-align: center;
+    padding: 4%;
+    
+}
+
+.date-user1 {
+
+    color: rgba(172, 172, 172, 0.795);
+    font-size: 50%;
+    margin-top: -3%;
+    margin-left: 214px;
+
+
+}
+
+.block_user2{
+
+    display: flex;
+
+}
+
+
+.photo_profil_user2 {
+
+    height: 18%;
+    width: 20%; 
+    justify-content: space-between;
+    border-radius: 50%;
+    margin-left: -5%;
+
+}
+
+.blocktxt_user2 {
+
+    margin-left: -60px;
+    padding-top: 16px;
+
+}
+
+.name-user2 {
+
+    color: rgba(172, 172, 172, 0.795);
+    font-size: 8px;
+    padding-left: 17%;
+
+    
+
+}
+
+.chat-user2 {
+
+    background-color: #f4f8fa;
+    border-radius: 20%;
+    margin-right: 25%;
+    margin-left: 15%;
+    margin-top: -1%;
+    padding: 4%;
+    
+}
+
+.chat-user2 span {
+
+    margin-left: 2%;
+    
+    
+
+}
+
+.date-user2 {
+
+    color: rgba(172, 172, 172, 0.795);
+    font-size: 50%;
+    margin-top: -4%;
+    margin-left: 50px;
+
+
+}
+.chatbox-submit {
+    
+    display: flex;
+    padding-top: 15%;
+    padding-left: -4px;
+    justify-content: space-evenly;
+}
+
+.send {
+    
+    border-style: none ;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
