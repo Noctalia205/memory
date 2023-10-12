@@ -4,7 +4,9 @@
     height: 400px;
     border-radius: 2%;
     border: 2px solid black;
-    
+    position: absolute;
+    right: 5px;  
+    bottom: 10px;  
 
 }
 
@@ -170,4 +172,6 @@ span {
     background-color: rgba(255, 255, 255, 0);
 
 }
+
+
 
