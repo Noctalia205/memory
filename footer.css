@@ -16,9 +16,6 @@ span{
 ul {
     list-style: none;
 }
-li::before {
-    content: "■"; color: rgba(194,120,36,255);
-}
 ul li:before{
     color: rgba(194,120,36,255);
     margin-right: 10px;
@@ -28,4 +25,8 @@ ul li{
 }
 p{
     color: rgb(143, 143, 143);
+}
+.listefooter::before {
+    content: "■"; color: rgba(194,120,36,255);
+    margin-right: 10%;
 }
