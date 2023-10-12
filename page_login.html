@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>Connexion</title>
-  <link rel="stylesheet" href="page_login.css">
+  <link rel="stylesheet" href="maiin.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
   <script src="script.js"></script>
 
 
   <nav class="main-nav">
     <div class="logo"><a href="#">Beginner SLAY Memory</a></div>
     <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Jeu</a></li>
-        <li><a href="#">Score</a></li>
-        <li><a href="#">Nous contacter</a></li>
+        <li class="navpoint"><a href="#">Accueil</a></li>
+        <li class="navpoint"><a href="#">Jeu</a></li>
+        <li class="navpoint"><a href="#">Score</a></li>
+        <li class="navpoint"><a href="#">Nous contacter</a></li>
     </ul>
 </nav>
      
@@ -24,7 +26,7 @@
 
 
 <div class="image-container">
-    <h1>Connexion</h1>
+    <h1 class="titre1">Connexion</h1>
 
     </div>
 </div>
@@ -35,15 +37,18 @@
     <br>
         <input class="case"  placeholder="Email" required="required"><br><br>
         <input class="case"  placeholder="Mot de passe"  required="required" ><br><br>
-        <br><br>
-        <input class="bouton" type="submit" value="Envoyer">
+        <a class="inscription" a href="#">Mot de Passe oublié ?</a><br><br>
+        <a class="inscription" a href="#">Pas de compte ? S'inscrire</a><br><br>
+        <input type="checkbox" class="checkSouvenir" name="Se Souvenir de moi" />
+        <label for="checkSouvenir" class="checksouvenirs">Se Souvenir de moi</label><br><br><br><br>
+        <input class="boutonEnvoyer" type="submit" value="Envoyer">
         <br><br><br><br><br><br>
     </form>
 </body>
 
 
 <footer>
-  <div><h2>Information</h2>
+  <div><h2 class ="titre1">Information</h2>
     <P>Si vous souhaitez plus d'informations.</P>
     <p class="one">Tel : <span>06 05 04 03 02</span><br/><br/>
     Email : <span>support@powerofmemory.com</span><br/><br/>
@@ -55,11 +60,11 @@
     <a href="https://www.instagram.com/"> <img src="img_icones/icons8-instagram-94.png" width=30px height=30px/></a>
     <br/><br/><br/><br/><br/>
     <p>Copyright © 2023 Tous droits réservés</p><br></div>
-    <div><h2 class="two">Power Of Memory</h2><br/>
+    <div><h2 class="titre1">Power Of Memory</h2><br/>
     <ul class="two">
-        <li>Jouer !</li><br/>
-        <li>Les scores</li><br/>
-        <li>Nous contacter</li>
+        <li><a href="#" class="listefooter">Jouer !</a></li><br/>
+        <li><a href="#" class="listefooter">Les scores</a></li><br/>
+        <li><a href="#" class="listefooter">Nous contacter</a></li>
     </ul></div>
 </footer>
 </html>

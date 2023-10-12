@@ -2,8 +2,10 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="page_jeu.css">
+  <title>Page de Jeu</title>
+  <link rel="stylesheet" href="maiin.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
   <script src="script.js"></script>
   <nav class="main-nav">
     <div class="logo"><a href="#">Beginner SLAY Memory</a></div>
@@ -16,26 +18,127 @@
 </nav>
 </head>
 <body>
-    <h1>The Power Of Memory</h1>
-    <h2 class="difficult">Difficultés</h2>
+    <h1 class="titre1">The Power Of Memory</h1>
+    <div class="difth"><h2 >Difficultés</h2>
+    <h2 >Thèmes</h2></div>
+    <div class="bouttons_difth">
     <form method="POST" action="traitement.php">
+        <div class="bouttons_dif">
         <input class="bouton" type="submit" value="Easy">
         <input class="bouton" type="submit" value="Medium">
         <input class="bouton" type="submit" value="Difficile">
+        </div>
     </form>
-    <form method="POST" action="traitement.php" class="bouttons_difth">
-        <input class="bouton" type="submit" value="Easy">
-        <input class="bouton" type="submit" value="Medium">
-        <input class="bouton" type="submit" value="Difficile">
+    <form method="POST" action="traitement.php">
+        <div class="bouttons_th">
+        <input class="bouton" type="submit" value="Memes">
+        <input class="bouton" type="submit" value="DBZ">
+        <input class="bouton" type="submit" value="Nourriture">
+        </div>
     </form>
+    </div><br><br><br>
 
+    <div class="tableau_carte">
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    </div>
+
+
+
+
+
+
+
+    <div class="chatbox-container">
+        <div class="chatbox-high">  
+            <img class="pp" src="img/photo_profil.png">
+            <p class="txt-top">
+                Chat général
+            </p> 
+        </div>
+        <div class="chatbox-chat">
+        <div>
+           <div>
+            <p class="name-user1">
+                Moi
+            </p> 
+             
+            <p class="chat-user1">
+               <span>Hello</span>   
+            </p>
+            <p class="date-user1">
+                Aujourd'hui à 15h22
+            </p>
+           </div>
+           <div class="block_user2">
+            <img class="photo_profil_user2" src="img/rebeudeter_photoprofil.png" alt="rebeudeter">
+            <div class="blocktxt_user2">
+            <p class="name-user2">
+                rebeu_SOIN
+            </p>
+            <p class="chat-user2">
+                <span>Qu'j'quitte la France, elle a fait la petite frange 
+            C'est la kiffance, c'est la kiffance
+            Que je dépense, gros joint devant la Défense
+            C'est la kiffance, c'est la kiffance.</span>
+            </p>
+            <p class="date-user2">
+                Aujourd'hui à 15h30
+            </p>
+            </div>
+            </div>
+        </div>   
+        </div>
+        <form method="POST" action="traitement.php" class="chatbox-submit">
+            <input type="text" name="chat" id="chat" placeholder="Votre message..." required="required">
+            <input class="send"  type="submit" value="Envoyer">
+    
+    
+    
+        </form>
+    
+        </div>
 </body>
 <footer>
-    <div><h2>Information</h2>
+    <div><h2 class="titre1">Information</h2>
         <P>Si vous souhaitez plus d'informations.</P>
-        <p class="one">Tel : <span>06 05 04 03 02</span><br/><br/>
-        Email : <span>support@powerofmemory.com</span><br/><br/>
-        Location : <span>Paris</span></p>
+        <p class="one">Tel : <span class="infos">06 05 04 03 02</span><br/><br/>
+        Email : <span class="infos">support@powerofmemory.com</span><br/><br/>
+        Location : <span class="infos">Paris</span></p>
         <a href="https://www.facebook.com/?locale=fr_FR"> <img src="img_icones/icons8-facebook-circled-94.png" width=30px height=30px/></a>
         <a href="https://twitter.com/?lang=fr"> <img src="img_icones/icons8-twitter-circled-94.png" width=30px height=30px/></a>
         <a href="https://www.google.fr/"> <img src="img_icones/icons8-google-94.png" width=30px height=30px/></a>
@@ -43,11 +146,11 @@
         <a href="https://www.instagram.com/"> <img src="img_icones/icons8-instagram-94.png" width=30px height=30px/></a>
         <br/><br/><br/><br/><br/>
         <p>Copyright © 2023 Tous droits réservés</p><br></div>
-        <div><h2 class="two">Power Of Memory</h2><br/>
+        <div><h2 class="titre1">Power Of Memory</h2><br/>
         <ul class="two">
-            <li>Jouer !</li><br/>
-            <li>Les scores</li><br/>
-            <li>Nous contacter</li>
+            <li><a href="#" class="listefooter">Jouer !</a></li><br/>
+            <li><a href="#" class="listefooter">Les scores</a></li><br/>
+            <li><a href="#" class="listefooter">Nous contacter</a></li>
         </ul></div>
 </footer>
 </html>
