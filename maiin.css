@@ -113,19 +113,39 @@ h2{
     margin-left: 5%;
 }
 
-.carte {
-    background-image: url(img_memory/dos_de_carte.jpg);
-    background-size: cover;
-    width: 113px;
-    height: 150px;
+.carte img{
+    max-width: 100%;
+    max-height: 100%;
     background-color: rgb(0, 0, 0);
-    margin: 10px;
+    
 }
+
 .tableau_carte{
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 40%;
     margin: auto;
+    justify-content: center;
+}
+tr{
+    margin: 100px;
+}
+th, td{
+    padding: 1px;
+    text-align: center;
+    padding: 1%;
+}
+.Easy{
+    width: 70%;
+    border-collapse: collapse;
+}
+.Medium{
+    width: 70%;
+    border-collapse: collapse;
+}
+.Difficile{
+    width: 70%;
+    border-collapse: collapse;
 }
 .inscription{
     margin-left: 39%;
@@ -139,7 +159,7 @@ h2{
     border: 2px solid black;
     position: absolute;
     right: 5px;  
-    bottom: -430px; 
+    bottom: -800px; 
 
 }
 
@@ -328,3 +348,5 @@ body::-webkit-scrollbar {
   .checksouvenirs{
     color: grey;
   }
+
+  
