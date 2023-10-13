@@ -3,26 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>Contact</title>
-  <link rel="stylesheet" href="page_contact.css">
+  <link rel="stylesheet" href="maiin.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
   <script src="script.js"></script>
   <nav class="main-nav">
     <div class="logo"><a href="#">Beginner SLAY Memory</a></div>
     <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Jeu</a></li>
-        <li><a href="#">Score</a></li>
-        <li><a href="#">Nous contacter</a></li>
+      <li class="navpoint"><a href="index.html">Accueil</a></li>
+      <li class="navpoint"><a href="page_jeu.html">Jeu</a></li>
+      <li class="navpoint"><a href="page_de_score.html">Score</a></li>
+      <li class="navpoint"><a href="page_contact.html">Nous contacter</a></li>
+      <li class="navpoint"><a href="page_login.html">Connexion</a></li>
+      <div class="profil"><a href="page_MyAccount.html"><img src="img/icon-connexion.png"  alt="icon"></a></div>
     </ul>
 </nav>
      
 </head>
-<body>
+<body class="page_MyContact">
 
 
 
 
   <div class="image-container">
-    <h1>NOUS CONTACTER</h1>
+    <h1 class="title-bo">NOUS CONTACTER</h1>
 </div>
 
   <br><br><br><br>
@@ -33,7 +37,7 @@
         <div class="blue-square">
           <p class="circle-orange">
 
-            <img  class="image_icone" src="https://www.iconsdb.com/icons/preview/white/mobile-phone-8-xxl.png" width=40px height=40px/></a>
+            <img  class="image_icone" src="img_icones/mobile-phone-8-48.png" width=40px height=40px/></a>
           </p>
 
           <p class="txt_square">
@@ -46,7 +50,7 @@
 
           <p class="circle-orange">
 
-            <img class="image_icone" src="https://www.iconsdb.com/icons/preview/white/message-outline-xxl.png" width=40px height=40px/></a>
+            <img class="image_icone" src="img_icones/message-outline-48.png" width=40px height=40px/></a>
           </p>
 
           <p class="txt_square">
@@ -59,7 +63,7 @@
 
           <p class="circle-orange">
 
-            <img class="image_icone"  src="https://www.iconsdb.com/icons/preview/white/map-marker-2-xxl.png" width=40px height=40px/></a>
+            <img class="image_icone"  src="img_icones/map-marker-2-48.png" width=40px height=40px/></a>
           </p>
 
           <p class="txt_square">
@@ -79,12 +83,12 @@
   <form method="POST" action="traitement.php">
 
       <div class="flex">
-        <input class="case"  placeholder="Nom" required="required">
-        <input   class="case"  placeholder="Email"  required="required" >
+        <input class="case5"  placeholder="Nom" required="required">
+        <input   class="case5"  placeholder="Email"  required="required" >
       </div> 
 
       <div>
-        <input class="case"  placeholder="Sujet"  required="required" >
+        <input class="case5"  placeholder="Sujet"  required="required" >
       </div>
 
         <div>
@@ -100,11 +104,11 @@
 
 
 <footer>
-  <div><h2>Information</h2>
+  <div><h2 class ="titre1">Information</h2>
     <P>Si vous souhaitez plus d'informations.</P>
     <p class="one">Tel : <span>06 05 04 03 02</span><br/><br/>
     Email : <span>support@powerofmemory.com</span><br/><br/>
-    Location : <span>Paris</span></p><br>
+    Location : <span>Paris</span></p>
     <a href="https://www.facebook.com/?locale=fr_FR"> <img src="img_icones/icons8-facebook-circled-94.png" width=30px height=30px/></a>
     <a href="https://twitter.com/?lang=fr"> <img src="img_icones/icons8-twitter-circled-94.png" width=30px height=30px/></a>
     <a href="https://www.google.fr/"> <img src="img_icones/icons8-google-94.png" width=30px height=30px/></a>
@@ -112,11 +116,11 @@
     <a href="https://www.instagram.com/"> <img src="img_icones/icons8-instagram-94.png" width=30px height=30px/></a>
     <br/><br/><br/><br/><br/>
     <p>Copyright © 2023 Tous droits réservés</p><br></div>
-    <div><h2 class="two">Power Of Memory</h2><br/>
+    <div><h2 class="titre1">Power Of Memory</h2><br/>
     <ul class="two">
-      <li><a href="#" class="listefooter">Jouer !</a></li><br/>
-      <li><a href="#" class="listefooter">Les scores</a></li><br/>
-      <li><a href="#" class="listefooter">Nous contacter</a></li>
+        <li><a href="page_jeu.html" class="listefooter">Jouer !</a></li><br/>
+        <li><a href="page_de_score.html" class="listefooter">Les scores</a></li><br/>
+        <li><a href="page_contact.html" class="listefooter">Nous contacter</a></li>
     </ul></div>
 </footer>
 </html>

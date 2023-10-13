@@ -21,43 +21,49 @@ body{
     flex: 3;
     font-family: "Poppins";
     font-size: 20px;
-    
+
+}
+.profil img{
+    width: 40px;
+    height: 40px;
+    padding-right: 19px;
+    margin-top: -8px;
 }
 .main-nav {
-    display: flex;
-    color: white;
-    padding: 1em;
-    font-family:"Poppins";
-    background-color:rgb(0, 0, 0,0.5);
+display: flex;
+color: white;
+font-family:"Poppins";
+background-color:rgb(0, 0, 0,0.5);
+padding-left:10px;
 
-    padding-top: 2%;
-    }
+padding-top: 2%;
+}
 
 .main-nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    }
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
 
-a{
+.navigator {
     color: white;
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .main-nav li {
-    margin-right: 4em;
+margin-right: 4em;
 }
 .main-nav > form {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    }
+display: flex;
+justify-content: flex-end;
+flex: 1;
+}
 .main-nav input {
-    flex: 1;
-    }
+flex: 1;
+}
 
 .main-nav ul {
-flex-direction: row; /* Change this to 'column' to stack the links */
-margin-bottom: 1em;
- }
+ flex-direction: row; /* Change this to 'column' to stack the links */
+ margin-bottom: 1em;
+}
