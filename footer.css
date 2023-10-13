@@ -23,10 +23,11 @@ ul li:before{
 ul li{
     color: rgb(143, 143, 143);
 }
-p{
-    color: rgb(143, 143, 143);
-}
+
 .listefooter::before {
     content: "■"; color: rgba(194,120,36,255);
     margin-right: 10%;
+}
+.tree{
+    color: rgb(143, 143, 143)!important;
 }

@@ -110,6 +110,16 @@ h2{
     justify-content: space-evenly;
     font-family: sans-serif;
 }
+.bouttons_th{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.bouttons_dif{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
 .difficult{
     margin-left: 5%;
 }
@@ -1199,8 +1209,9 @@ BODY*/
     color: white;
 
   }
-
-
+.four{
+    color:black !important;
+}
 
 
   /* PAGE CONTACT */
@@ -1246,7 +1257,6 @@ textarea {
 form {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
     margin-bottom: 6%;
     
 
