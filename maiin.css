@@ -78,7 +78,7 @@ body{
     font-family: sans-serif ;
 
 }
-.case1, .case{
+.case1{
     background-color: rgba(39,38,69,255);
     margin-left: 39%;
 }
@@ -1035,32 +1035,39 @@ BODY*/
 
 }
 
+.pp_block {
+    width: 100vw;
+    height: 10vh;
+}
 
 .pp_gohan {
 
     width: 280px;
     height: 280px;
     border: solid white 5px;
-    border-radius: 100%;
-    margin-left: 40.9%;
+    border-radius: 50%;
+    margin-left: 40%;
     position: absolute;
-    margin-top: 81px;
+    margin-top: -20vh;
+    padding: 0px;
+    outline: white 1px;
 }
 
 .positionpseudo_MyAccount {
 
-    padding-top: 12%;
+    padding-top: 5%;
 
 }
 
 .pseudo_MyAccount {
 
     display: flex;
-    margin-left: 38.5%;
+    margin-left: 41%;
     position: absolute;
     color: white;
     font-size: 28px;
     font-family: sans-serif;
+    margin-top: -3%;
     
 
 }
@@ -1094,7 +1101,8 @@ BODY*/
 
 .suptitre_modifinfo {
 
-  margin-top: 95px;
+    margin-top: -50px;
+
 
 
 }
@@ -1102,7 +1110,7 @@ BODY*/
 .titre_modifinfo{
 
   color: white;
-  margin-left: 430px;
+  margin-left: 680px;
   margin-bottom: 35px;
   margin-top: 85px;
 
@@ -1239,7 +1247,6 @@ form {
     display: flex;
     flex-direction: column;
     padding-left: 60px;
-    padding-top: 30px;
     margin-bottom: 6%;
     
 
