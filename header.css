@@ -46,7 +46,7 @@ margin: 0;
 display: flex;
 }
 
-a {
+.navigator {
     color: white;
     text-decoration: none;
 }

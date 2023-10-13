@@ -1,13 +1,15 @@
 .chatbox-container {
-    background-color: white;
-    width: 290px;
-    height: 400px;
-    border-radius: 2%;
-    border: 2px solid black;
-    position: absolute;
-    right: 5px;  
-    bottom: 10px;  
 
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #473f2d;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    bottom: 30%;
 }
 
 
@@ -16,8 +18,8 @@
 display: flex;
 background-color: #4171ff;
 text-align: center;
-border-top-right-radius: 2%;
-border-top-left-radius: 2%;
+border-top-right-radius: 4px;
+border-top-left-radius: 4px;
 
 
 }
@@ -26,14 +28,17 @@ border-top-left-radius: 2%;
 .pp {
 
     height: 18%;
-    width: 18%; 
+    width: 12%; 
     justify-content: space-between;
+    border-radius: 50%;
+    margin-left: 5px
 
 }
 
 .txt-top {
 
     padding-top: .5px;
+    margin-right: 160px;
 
 
 }
@@ -69,7 +74,7 @@ span {
 
     background-color: #4171ff;
     width: 18%;
-    border-radius: 20%;
+    border-radius: 10px 0 10px 10px;
     margin-left: 76%;
     padding: 1%;
     margin-top: 3%;
@@ -131,7 +136,7 @@ span {
 .chat-user2 {
 
     background-color: #f4f8fa;
-    border-radius: 20%;
+    border-radius: 0px 10px 10px 10px;
     margin-right: 25%;
     margin-left: 15%;
     margin-top: -1%;
@@ -142,7 +147,6 @@ span {
 .chat-user2 span {
 
     margin-left: 2%;
-    
     
 
 }
@@ -159,7 +163,7 @@ span {
 .chatbox-submit {
     
     display: flex;
-    padding-top: 15%;
+    padding-top: 11%;
     padding-left: -4px;
     justify-content: space-evenly;
 }
