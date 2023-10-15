@@ -564,7 +564,7 @@ body{
 
 .img-head{
     min-height: 52rem;
-    background: url('img/background.jpg') no-repeat;
+    background: url('img/Background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
