@@ -24,10 +24,11 @@ body{
 
 }
 .profil img{
-    width: 40px;
-    height: 40px;
-    padding-right: 19px;
-    margin-top: -8px;
+    width: 67%;
+    height: 37px;
+    padding-right: 1em;
+    margin-top: 35%;
+
 }
 .main-nav {
 display: flex;
@@ -35,7 +36,6 @@ color: white;
 font-family:"Poppins";
 background-color:rgb(0, 0, 0,0.5);
 padding-left:10px;
-
 padding-top: 2%;
 }
 
@@ -62,6 +62,7 @@ flex: 1;
 .main-nav input {
 flex: 1;
 }
+
 
 .main-nav ul {
  flex-direction: row; /* Change this to 'column' to stack the links */

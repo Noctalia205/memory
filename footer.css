@@ -7,8 +7,9 @@ footer{
 h2{
     color: white;
 }
-span{
-    color: rgb(145, 145, 145);
+.one span {
+    
+    color: rgba(172, 172, 172, 0.795);
 }
 .one{
     color: rgba(194,120,36,255);

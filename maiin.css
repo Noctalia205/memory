@@ -18,9 +18,10 @@
     cursor: pointer;
     display: inline-block;
     border: 1px solid #ffffff;
+    margin-bottom: 5%;
 }
 .boutonConfirmer, .boutonEnvoyer{
-    margin-left: 47%;
+    margin-left: 46%;
 }
 .bouton:hover, .boutonEnvoyer:hover, .boutonConfirmer:hover {
     background-color: #b95300; /* Green */
@@ -34,8 +35,8 @@ body{
 .case1, .case{
 
     display: inline-block;
-    height: 25px;
-    width: 400px;
+    height: 30px;
+    width: 30%;
 }
 
 .textarea {
@@ -69,25 +70,30 @@ body{
 
 
 .image-container {
-    background-image: url("villefuturiste.jpg") ;
-    height: 14em;
-    width: 94.2%;
+    background-image: url(villefuturiste.jpg);
+    height: 12em;
+    width: 91.2%;
     text-align: center;
     vertical-align: middle;
-    padding: 55px;
-    font-family: sans-serif ;
+    padding: 4%;
+    font-family: sans-serif;
+    border: solid #ffffff 4px;
+    margin-bottom: 5%;
 
 }
 .case1{
     background-color: rgba(39,38,69,255);
-    margin-left: 39%;
+    margin-left: 35%;
 }
 
 .titre1{
+    display: flex;
     color: white;
+    justify-content: center;
+    padding-top: 6%;
 }
 .boutonEnvoyer{
-    margin-left: 47%;
+    margin-left: 45%;
 }
 a{
     color: white;
@@ -114,53 +120,126 @@ h2{
     display: flex;
     justify-content: space-evenly;
     font-family: sans-serif;
+    gap: 5%;
+
 }
 .bouttons_dif{
     display: flex;
     justify-content: space-evenly;
     font-family: sans-serif;
+    gap: 5%;
 }
-.difficult{
-    margin-left: 5%;
+
+
+
+.flex-globaltittle {
+
+    display: flex;
+
 }
+.titre-diff{
+   
+    margin-left: 25.5%;
+}
+
+.titre-thèmes {
+
+    margin-left: 32.5%;
+
+}
+
+
 
 .carte img{
     max-width: 100%;
     max-height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-image: url(img/street.jpg);
+    border: solid white 1px;
     
 }
 
-.tableau_carte{
+.tableau_carte1{
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 50%;
     margin: auto;
     justify-content: center;
 }
+
+
+.tableau_carte2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+.tableau_carte3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+
 tr{
     margin: 100px;
 }
 th, td{
-    padding: 1px;
     text-align: center;
     padding: 1%;
+    width: 190px;
 }
 .Easy{
-    width: 70%;
+    width: 70vw;
     border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Easy img{
+    height: 195px;
+    width: 120px;
 }
 .Medium{
-    width: 1000%;
+    width: 100%;
     border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Medium img {
+
+    height: 100px;
+    width: 75px;
+
 }
 .Difficile{
-    width: 2000%;
+    width: 100%;
     border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Difficile img {
+
+    height: 100px;
+    width: 75px;
+
 }
 .inscription{
-    margin-left: 39%;
+    margin-left: 35%;
     color: grey;
+}
+
+.background-DBZ {
+
+    background: linear-gradient(70deg,#df0116 , #9f000f, #fc9100 , #fcf104)
 }
 
 
@@ -172,36 +251,45 @@ th, td{
 
 .chatbox-container {
 
+    display: block;
     position: fixed;
-    bottom: 2px;
-    right: 2px;
+    bottom: -30%;
+    right: 0.5%;
     width: 300px;
     background-color: #fff;
-    border: 1px solid #473f2d;
+    border: 5px solid blueviolet;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    bottom: 30%;
+    bottom: 2%;
+    
 }
 
 
 .chatbox-high {
 
-display: flex;
-background-color: #4171ff;
-text-align: center;
-border-top-right-radius: 2%;
-border-top-left-radius: 2%;
+    display: flex;
+    gap: 10px;
+    background-color: #4171ff;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    
 
 
 }
 
-
 .pp {
 
-    height: 18%;
-    width: 18%; 
-    justify-content: space-between;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.pp-position {
+
+    margin-left: 3%;
+    margin-top: 5px;
 
 }
 
@@ -215,24 +303,29 @@ border-top-left-radius: 2%;
 
 .chatbox-chat {
 
-padding-top: 70px;
-padding-left: 10px;
+
 padding: 0 5px;
+overflow-y: scroll;
+
+}
+
+.txt-chatboxusers {
+
+    color: black;
 
 }
 
 span {
 
-    font-size: 80%;
+    font-size: 88%;
 
 }
 
 .name-user1 {
 
-    padding-left: 70%;
     color: rgba(172, 172, 172, 0.795);
     font-size: 50%;
-    margin-left: 15px;
+    margin-left: 65%;
     margin-bottom: 1%;
 
 }
@@ -242,19 +335,26 @@ span {
 .chat-user1 {
 
     background-color: #4171ff;
-    width: 18%;
+    width: 26%;
     border-radius: 20%;
-    margin-left: 76%;
+    margin-left: 70%;
     padding: 1%;
     margin-top: 3%;
+    border-top-right-radius: 0%;
+    
+}
+
+.block_user1 {
+
+    
     
 }
 
 .chat-user1 span {
 
-    margin-left: 18%;
-    text-align: center;
-    padding: 4%;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
     
 }
 
@@ -263,7 +363,7 @@ span {
     color: rgba(172, 172, 172, 0.795);
     font-size: 50%;
     margin-top: -3%;
-    margin-left: 214px;
+    margin-left: 65%;
 
 
 }
@@ -271,24 +371,30 @@ span {
 .block_user2{
 
     display: flex;
+    
+    
 
 }
 
 
 .photo_profil_user2 {
 
-    height: 18%;
-    width: 20%; 
-    justify-content: space-between;
-    border-radius: 50%;
-    margin-left: -5%;
+    width: 70px;
+    height: 70px;
+    margin-left: -25%;
+
+}
+
+.posimg-pp {
+
+
 
 }
 
 .blocktxt_user2 {
 
-    margin-left: -60px;
-    padding-top: 16px;
+    margin-left: -28%;
+    padding-top: 10%;
 
 }
 
@@ -310,6 +416,7 @@ span {
     margin-left: 15%;
     margin-top: -1%;
     padding: 4%;
+    border-top-left-radius: 0%;
     
 }
 
@@ -330,12 +437,66 @@ span {
 
 
 }
+
+.name-user3 {
+
+    color: rgba(172, 172, 172, 0.795);
+    font-size: 50%;
+    margin-left: 65%;
+
+}
+
+
+
+.chat-user3 {
+
+    background-color: #4171ff;
+    width: 30%;
+    border-radius: 20%;
+    margin-left: 65%;
+    padding: 1%;
+    margin-top: 3%;
+    border-top-right-radius: 0%;
+    
+}
+
+.block_user3 {
+
+    margin-bottom: -45%;
+    
+}
+
+.chat-user3 span {
+
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    
+}
+
+.date-user3 {
+
+    color: rgba(172, 172, 172, 0.795);
+    font-size: 50%;
+    margin-top: -3%;
+    margin-left: 65%;
+
+
+}
+
+
+
+#chat {
+    width: 60%;
+}
+
+
 .chatbox-submit {
     
     display: flex;
-    padding-top: 15%;
-    padding-left: -4px;
+    flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 10%;
 }
 
 .send {
@@ -349,25 +510,22 @@ span {
 
 
 
-
-
-
-body::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+.chatbox-chat::-webkit-scrollbar {
+    width: 12px; 
   }
   
-  body::-webkit-scrollbar-track {
-    background: rgba(14,11,38,255); /* color of the tracking area */
+  .chatbox-chat::-webkit-scrollbar-track {
+    background: white; 
   }
   
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0); /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 2px solid white; /* creates padding around scroll thumb */
+  .chatbox-chat::-webkit-scrollbar-thumb {
+    background-color: rgb(6, 110, 145); 
+    border-radius: 20px; 
+    border: 2px solid white; 
   }
 
   .checkSouvenir{
-    margin-left: 39%;
+    margin-left: 35%;
   }
   .checksouvenirs{
     color: grey;
@@ -427,6 +585,12 @@ body{
     color: rgba(232, 229, 229, 0.854);
     font-family:"Work Sans";
     text-align: center;
+
+}
+
+.copyright-color {
+
+    color: white    ;
 
 }
 
@@ -699,7 +863,7 @@ body{
 
 
 
-/* PAGE DACCUEIL*/
+/* PAGE D'ACCUEIL*/
 
 
 
@@ -724,12 +888,6 @@ body{
     padding: 60px;
     font-family: sans-serif ;
     padding-top: 50px;
-}
-
-.title-score {
-    color:white
-    
-
 }
 
 .icon-score{
@@ -958,16 +1116,25 @@ body{
     flex: 3;
     font-family: "Poppins";
     font-size: 20px;
+    margin-top: 1.5%;
     
 }
+
+
+
+
+
 .main-nav {
 display: flex;
+position: fixed;
+width: 98.2%;
+margin-top: -2.5em;
 color: white;
 padding: 1em;
 font-family:"Poppins";
 background-color:rgb(10, 0, 31);
+padding-top: 4%;
 
-padding-top: 2%;
 }
 
 .main-nav > ul {
@@ -978,6 +1145,7 @@ display: flex;
 }
 .main-nav li {
 margin-right: 4em;
+margin-top: 4%;
 }
 .main-nav > form {
 display: flex;
@@ -991,16 +1159,42 @@ flex: 1;
 
 .main-nav ul {
  flex-direction: row; /* Change this to 'column' to stack the links */
- margin-bottom: 1em;
+ 
+ 
 }
 
-.navpoint {
+.navpoint{
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    display: inline-block;
+     
 }
+
+ul :hover{
+	font-size: 17px;
+	font-weight: 90px;
+    transition: font-size .1s linear,
+	font-weight .1s linear;
+    border-radius: 10%;
+    -webkit-text-fill-color:orange;
+}
+
+
 .listefooter {
     color: grey;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*---------------------------------------------------------------------------------------------------------------------------------------
 BODY*/
@@ -1010,23 +1204,22 @@ BODY*/
     color: #ffffff;
     border: var(--main-border-color);
     font-family: "Poppins";
-    padding-top: 50px;
-    font-size: 40px;
+    padding-top: 4%;
+    font-size: 330%;
     text-align: center;
 }
 
 
 .image-top {
     background-image: url("img/villefuturiste.jpg") ;
-    height: 10em;
     width: 87.2%;
     text-align: center;
-    padding: 90px;
+    padding: 6.1%;
     font-family: sans-serif ;
     padding-top: 3%;
     margin-top: -5.1%;
     border: solid #ffffff 4px;
-    border-right: none;
+    
     
 }
 
@@ -1034,51 +1227,46 @@ BODY*/
 
 .block_MyAccount {
 
-    /* background-color: white; */
     background-color: rgba(14,11,38,255);
     border-radius: 10px;
     margin: 41px;
     width: 94%;
-    height: 580px;
+    height: 600px;
     margin-top: 15%;
     border: solid white 4px;
 
 }
 
 .pp_block {
-    width: 100vw;
-    height: 10vh;
+   
 }
 
 .pp_gohan {
 
-    width: 280px;
-    height: 280px;
+    
+    height: 258px;
     border: solid white 5px;
     border-radius: 50%;
-    margin-left: 40%;
+    margin-left: 37.7%;
     position: absolute;
-    margin-top: -20vh;
-    padding: 0px;
+    margin-top: -10%;
     outline: white 1px;
 }
 
 .positionpseudo_MyAccount {
 
-    padding-top: 5%;
+    padding-top: 7%;
+    display: flex;
+    justify-content: center;
 
 }
 
 .pseudo_MyAccount {
 
     display: flex;
-    margin-left: 41%;
-    position: absolute;
     color: white;
-    font-size: 28px;
+    font-size: 200%;
     font-family: sans-serif;
-    margin-top: -3%;
-    
 
 }
 
@@ -1087,14 +1275,13 @@ BODY*/
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    margin-top: 35px;
+    
 }
 
 .case {
     color: rgb(162, 155, 155);
     background-color: #2f2e54;
     border: 0;
-    
     height: 35px;
     width: 100%;
 
@@ -1120,9 +1307,10 @@ BODY*/
 .titre_modifinfo{
 
   color: white;
-  margin-left: 680px;
-  margin-bottom: 35px;
-  margin-top: 85px;
+  justify-content: center;
+  display: flex;
+  margin-top: 10%;
+  
 
 }
 
@@ -1135,7 +1323,7 @@ BODY*/
 
 .bouton_valider {
     background: rgb(0,172,238);
-  background: linear-gradient(0deg, #6b0d75 0%, #c3219f 100%);
+    background: linear-gradient(0deg, #6b0d75 0%, #c3219f 100%);
     width: 130px;
     height: 40px;
     line-height: 42px;
@@ -1168,7 +1356,7 @@ BODY*/
     height: 2px;
   }
   .bouton_valider:hover{
-     background: transparent;
+    background: transparent;
     box-shadow: none;
   }
   .bouton_valider:hover:before {
@@ -1241,23 +1429,26 @@ BODY*/
     background-color: #2f2e54;
     border: 0;
     display: inline-block;
-    height: 35px;
-    width: 27%;
+    height: 6vh;
+    width: 36.2%;
 
 }
 
-textarea {
-    height: 200px;
-    width: 500px;
+.textarea-contact {
+    height: 30vh;
+    width: 36.2%;
     color: rgb(162, 155, 155);
     background-color: #2f2e54;
     border: 0;
+    font-family: "Poppins";
 }
 
-form {
+.block-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 6%;
+    margin-left : 4.2%;
+    margin-top: 4%;
+    
     
 
 }
@@ -1266,12 +1457,12 @@ form {
     display: flex;
 }
 .flex input{
-    width: 233px;
-    margin-right: 30px;
+    width: 16.97%;
+    margin-right: 2%;
 }
 
 form > div{
-    padding-bottom: 20px;
+    padding-bottom: 1%;
 }
 
 .logo-main {
@@ -1331,6 +1522,6 @@ form > div{
     color: white;
     font-family: "Poppins";
     margin-right: 1%;
-    margin-top: 5%;
+    margin-top: 6%;
 
 }
