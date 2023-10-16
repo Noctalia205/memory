@@ -24,8 +24,8 @@ CREATE TABLE Score(
     scoring INT(20) NOT NULL,
     date_of_party DATETIME NOT NULL,
     PRIMARY KEY (id)
-    CONSTRAINT fk_Score_Users FOREIGN KEY (id_player) REFERENCES Users(id) ON DELETE CASCADE
-    CONSTRAINT fk_Score_Game FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE
+    CONSTRAINT fk_Score_Users FOREIGN KEY (id_player) REFERENCES Users(id) ON DELETE CASCADE,
+    CONSTRAINT fk_Score_Game FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE,
 )ENGINE = INNODB;
 
 
@@ -37,7 +37,7 @@ CREATE TABLE Message(
     chat TEXT NOT NULL,
     date_hour_chat DATETIME NOT NULL,
     PRIMARY KEY (id)
-    CONSTRAINT fk_Message_Game FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE
+    CONSTRAINT fk_Message_Game FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE,
 )ENGINE = INNODB;
 
 
@@ -160,6 +160,6 @@ WHERE id = "id de l'user qui change de mail" AND pass = 'mdp users';
 SELECT mail, pass FROM Users;
 
 
-SELECT name_game FROM Game;
+SELECT name_game FROM Game ORDER BY ASC;
 SELECT username FROM Users;
 SELECT difficulties, scoring FROM Score;
