@@ -132,8 +132,8 @@ VALUES (1, 5, 'suppositoire de wc', '2023-10-16 12:24:12'),
 
 ----Game-----
 
-INSERT INTO Game (id, name_game)
-VALUES (1, 'Power Of Memory');
+INSERT INTO Game (name_game)
+VALUES ('Power Of Memory');
 
 
 
@@ -157,3 +157,9 @@ WHERE id = "id de l'user qui change de mail" AND pass = 'mdp users';
 
 -----UPDATE CONNEXION SITE----
 
+SELECT mail, pass FROM Users;
+
+
+SELECT name_game FROM Game;
+SELECT username FROM Users;
+SELECT difficulties, scoring FROM Score;
