@@ -160,6 +160,8 @@ WHERE id = "id de l'user qui change de mail" AND pass = 'mdp users';
 SELECT mail, pass FROM Users;
 
 
-SELECT name_game FROM Game ORDER BY ASC;
-SELECT username FROM Users;
-SELECT difficulties, scoring FROM Score;
+SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring
+FROM Score
+INNER JOIN Game ON Score.id_game = Game.id
+INNER JOIN Users ON Score.id_player = Users.id
+ORDER BY Game.name_game ASC;
