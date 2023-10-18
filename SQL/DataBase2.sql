@@ -145,20 +145,33 @@ VALUES (2, 1, 'HEY', '14:30'),
 
 /* Story 8 */
 
-SELECT M.id_expediteur, M.id_receveur, U.id
-FROM utilisateurs as U1
-INNER JOIN messages as M
-ON M.id_expediteur = U.id
-INNER JOIN utilisateurs as U2
+/*SELECT M.id_expediteur
+FROM  messages as M
+INNER JOIN utilisateurs  as U
 ON M.id_receveur = U.id
+ORDER BY date_envoie DESC;*/
+
+/* STORY 9*/
+SELECT M.id_expediteur, M.id_receveur, M.contenu
+FROM messages as M 
+INNER JOIN utilisateurs  as U1
+ON M.id_expediteur = U1.id
+INNER JOIN utilisateurs as U2
+ON M.id_receveur = U2.id
 ORDER BY date_envoie DESC;
 
 
+/* Story 10 */
 
+SELECT U1.pseudo,S.nom, S.description,S.adresse,S.code_postal,S.ville,S.pays,S.date_service,  U2.pseudo as pseudo_inscrit
+FROM services as S
 
+LEFT JOIN utilisateurs as U1
+ON S.id_utilisateur = U1.id
+LEFT JOIN services_utilisateurs as SU
+ON S.id = SU.id_service
+LEFT JOIN utilisateurs as U2
+ON SU.id_utilisateur = U2.id
 
-
-
-
-
-
+WHERE S.date_service < NOW() AND U2.id IS NULL
+ORDER BY S.date_service DESC, S.nom ASC;
