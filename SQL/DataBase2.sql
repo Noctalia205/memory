@@ -163,15 +163,66 @@ ORDER BY date_envoie DESC;
 
 /* Story 10 */
 
-SELECT U1.pseudo,S.nom, S.description,S.adresse,S.code_postal,S.ville,S.pays,S.date_service,  U2.pseudo as pseudo_inscrit
-FROM services as S
-
-LEFT JOIN utilisateurs as U1
-ON S.id_utilisateur = U1.id
-LEFT JOIN services_utilisateurs as SU
-ON S.id = SU.id_service
-LEFT JOIN utilisateurs as U2
+SELECT U.id AS utilisateur_expediteur ,S.nom, S.code_postal, S.date_service, S.ville, S.pays, S.id_utilisateur, U2.id AS utilisateurs_receveur
+FROM services AS S
+LEFT JOIN utilisateurs AS U
+ON S.id_utilisateur = U.id 
+LEFT JOIN services_utilisateurs AS SU
+ON S.id = SU.id_service 
+LEFT JOIN utilisateurs AS U2
 ON SU.id_utilisateur = U2.id
+WHERE S.date_service >= NOW() 
+AND U2.id IS NULL
+ORDER BY S.date_service DESC, S.Ville ASC;
 
-WHERE S.date_service < NOW() AND U2.id IS NULL
-ORDER BY S.date_service DESC, S.nom ASC;
+/*Story 11*/
+
+SELECT S.*, SU.id, U.portable, U.pseudo
+FROM services as S
+LEFT JOIN utilisateurs as U
+ON S.id_utilisateur = U.id
+LEFT JOIN services_utilisateurs as SU
+ON SU.id_utilisateur = S.id_utilisateur
+LEFT JOIN utilisateurs as U2
+ON SU.id_utilisateur = S.id
+GROUP BY S.id;
+
+
+/* Story 12 */
+
+DELETE FROM services
+WHERE id = 2;
+
+
+/* Story 13 */
+
+DELETE FROM services_utilisateurs
+WHERE id_utilisateur = 2 AND id_service = 6;
+
+/* Story 14 */
+
+DELETE FROM utilisateurs
+WHERE id = 2;
+
+/* Story 15 */
+
+DELETE FROM messages
+WHERE id = 2;
+
+/* Story 16 */
+
+SELECT S.*, U.id, U2.id, COUNT(SU.id_utilisateur) 
+FROM services as S
+INNER JOIN utilisateurs as U
+  ON S.id_utilisateur = U.id 
+INNER JOIN services_utilisateurs as SU
+  ON SU.id_service = S.id 
+LEFT JOIN utilisateurs as U2 
+  ON SU.id_utilisateur = U2.id 
+ORDER BY date_service DESC, ville ASC;
+
+/* Story 17 */
+
+
+
+/* Story 18 */
