@@ -24,8 +24,8 @@ CREATE TABLE Score(
     scoring INT(20) NOT NULL,
     date_of_party DATETIME NOT NULL,
     PRIMARY KEY (id)
-    CONSTRAINT fk_Score_Users FOREIGN KEY (id_player) REFERENCES Users(id) ON DELETE CASCADE,
-    CONSTRAINT fk_Score_Game FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_player) REFERENCES Users(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE,
 )ENGINE = INNODB;
 
 
@@ -37,7 +37,7 @@ CREATE TABLE Message(
     chat TEXT NOT NULL,
     date_hour_chat DATETIME NOT NULL,
     PRIMARY KEY (id)
-    CONSTRAINT fk_Message_Game FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_game) REFERENCES Game(id) ON DELETE CASCADE,
 )ENGINE = INNODB;
 
 
@@ -162,15 +162,25 @@ WHERE id = "id de l'user qui change de mail" AND pass = 'mdp users';
 
 SELECT mail, pass FROM Users;
 
+-----
 
 SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring
 FROM Score
 INNER JOIN Game ON Score.id_game = Game.id
 INNER JOIN Users ON Score.id_player = Users.id
 ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;
+---
 
+SELECT G.name_game, U.username, S.difficulties, S.scoring
+FROM Score AS S
+INNER JOIN Users AS U
+    ON U.id = S.id_player
+INNER JOIN Game AS G
+    ON G.id = S.id_game
+WHERE S.id_player = 1 AND U.username = 'Noctalia'
+ORDER BY G.name_game, S.difficulties, S.scoring ASC;
 
-
+-----9eme---
 SELECT id, id_player, difficulties, id_game
 FROM Score
 WHERE id_player = 1 AND difficulties = 'Easy';
