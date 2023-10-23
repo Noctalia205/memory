@@ -1,4 +1,6 @@
 <?php require_once '../utils/common.php' ?>
+<?php $title = 'Jeu';
+$page = 'Jeu';?>
 <!doctype html>
 <html lang="fr">
 <?php require_once SITE_ROOT . ('partials/head.php') ?>

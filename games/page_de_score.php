@@ -1,4 +1,6 @@
 <?php require_once '../utils/common.php' ?>
+<?php $title = 'Score';
+$page = 'Score';?>
 <!DOCTYPE html>
 
 <html lang="fr">

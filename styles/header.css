@@ -68,3 +68,7 @@ flex: 1;
  flex-direction: row; /* Change this to 'column' to stack the links */
  margin-bottom: 1em;
 }
+
+.active {
+    color: orange;
+}

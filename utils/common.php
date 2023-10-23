@@ -8,3 +8,7 @@ define('PROJECT_FOLDER', '/memory/');
 define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . PROJECT_FOLDER); 
 
 session_start();
+
+
+
+function connectToDbAndGetPdo(): int

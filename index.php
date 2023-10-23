@@ -1,4 +1,6 @@
 <?php require_once 'utils/common.php' ?>
+<?php $title = 'Accueil';
+$page = 'Accueil';?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -6,6 +8,7 @@
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
 <?php require_once SITE_ROOT . ('utils/database.php') ?>
 <?php connectToDbAndGetPdo() ?>
+
 <body>
     <?php require_once SITE_ROOT . ('partials/header.php') ?>
     <div class="img-head">
