@@ -11,4 +11,3 @@ session_start();
 
 
 
-function connectToDbAndGetPdo(): int
