@@ -1,4 +1,6 @@
 <?php require_once 'utils/common.php' ?>
+<?php $title = 'Connexion';
+$page = 'Connexion';?>
 <!doctype html>
 <html lang="fr">
 
