@@ -70,7 +70,7 @@ body{
 
 
 .image-container {
-    background-image: url(assets/villefuturiste.jpg);
+    background-image: url("../assets/villefuturiste.jpg");
     height: 12em;
     width: 91.2%;
     text-align: center;
@@ -153,7 +153,7 @@ h2{
 .carte img{
     max-width: 100%;
     max-height: 100%;
-    background-image: url(assets/street.jpg);
+    background-image: url("../assets/street.jpg");
     border: solid white 1px;
     
 }
@@ -564,7 +564,7 @@ body{
 
 .img-head{
     min-height: 52rem;
-    background: url('assets/Background.jpg') no-repeat;
+    background: url("../assets/Background.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -881,7 +881,7 @@ body{
     padding-top: 30px;
 }
 .banner-score{
-    background-image: url("assets/street.jpg") ;
+    background-image: url("../assets/street.jpg") ;
     height: 10em;
     width: 92%;
     text-align: center;
@@ -1211,7 +1211,7 @@ BODY*/
 
 
 .image-top {
-    background-image: url("assets/villefuturiste.jpg") ;
+    background-image: url("../assets/villefuturiste.jpg") ;
     width: 87.2%;
     text-align: center;
     padding: 6.1%;

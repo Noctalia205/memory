@@ -1,19 +1,20 @@
-<?php require_once('partials/common.php') ?>
+<?php require_once 'utils/common.php' ?>
 <!DOCTYPE html>
 
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="maiin.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="header.css">
-    <title>Accueil</title>
-</head>
+<?php require_once SITE_ROOT . ('partials/head.php') ?>
 
 <body>
-<?php require_once('partials/header.php') ?>
+    <?php require_once SITE_ROOT . ('partials/header.php') ?>
+    <div class="img-head">
+
+        <div class="title">VIENS SLAY DANS NOTRE STUDIO ! </div>
+        <div class="sous-title">Slayy en challengant les cerveaux les plus agiles<br></div>
+        <div class="button"><a href="games/page_jeu_dbz.php">Jouez !</a></button>
+        </div>
+    </div>
+
 
     <main>
         <div class="flex-all">
@@ -114,29 +115,6 @@
 
 
 </body>
-<footer>
-    <div>
-        <h2 class="titre1">Information</h2>
-        <P class="tree">Si vous souhaitez plus d'informations.</P>
-        <p class="one">Tel : <span>06 05 04 03 02</span><br /><br />
-            Email : <span>support@powerofmemory.com</span><br /><br />
-            Location : <span>Paris</span></p>
-        <a href="https://www.facebook.com/?locale=fr_FR"> <img src="assets/img_icones/icons8-facebook-circled-94.png" width=30px height=30px /></a>
-        <a href="https://twitter.com/?lang=fr"> <img src="assets/img_icones/icons8-twitter-circled-94.png" width=30px height=30px /></a>
-        <a href="https://www.google.fr/"> <img src="assets/img_icones/icons8-google-94.png" width=30px height=30px /></a>
-        <a href="https://www.pinterest.fr/"> <img src="assets/img_icones/icons8-pinterest-94.png" width=30px height=30px /></a>
-        <a href="https://www.instagram.com/"> <img src="assets/img_icones/icons8-instagram-94.png" width=30px height=30px /></a>
-        <br /><br /><br /><br /><br />
-        <p class="copyright-color">Copyright © 2023 Tous droits réservés</p><br>
-    </div>
-    <div>
-        <h2 class="titre1">Power Of Memory</h2><br />
-        <ul class="two">
-            <li><a href="games/page_jeu_dbz.php" class="listefooter">Jouer !</a></li><br />
-            <li><a href="games/page_de_score.php" class="listefooter">Les scores</a></li><br />
-            <li><a href="page_contact.php" class="listefooter">Nous contacter</a></li>
-        </ul>
-    </div>
-</footer>
+<?php require_once SITE_ROOT . ('partials/footer.php') ?>
 
 </html>
