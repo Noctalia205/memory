@@ -46,3 +46,14 @@ function AfficheTempsRecord(): int
     $results4 = $pdoStatement->fetch();
     return $results4->TempsRecord;
 }
+
+/* FONCTION TABLE SCORE */
+
+function AfficheNomUtilisateurScore(): string
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT COUNT(username) AS NomUtilisateur FROM users');
+    $pdoStatement->execute();
+    $results5 = $pdoStatement->fetch();
+    return $results5->TempsRecord;
+}
