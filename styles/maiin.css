@@ -947,8 +947,6 @@ body{
     background-color: rgb(11, 22, 82);
     margin-top: 80px;
     margin-bottom: 80px;
-    display: flex;
-    flex-direction: row;
     
 }
 

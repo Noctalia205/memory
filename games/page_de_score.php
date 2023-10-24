@@ -1,6 +1,6 @@
 <?php require_once '../utils/common.php' ?>
 <?php $title = 'Score';
-$page = 'Score'; ?>
+$page = 'Score';?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -8,7 +8,7 @@ $page = 'Score'; ?>
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
 
 <body>
-    <?php require_once SITE_ROOT . ('partials/header.php') ?>
+<?php require_once SITE_ROOT . ('partials/header.php') ?>
     <header>
         <div class="banner-score">
             <div class="title-score">SCORE</div>
@@ -63,42 +63,63 @@ $page = 'Score'; ?>
                     <div class="box-score-4">
                         <p>4:09.47</p>
                     </div>
-                    <div class="main-box-score2">
-
-                        <div class="box-score-1">
-                            <p>Jiafeydu95</p>
-                        </div>
-                        <div class="box-score-2">
-                            <p>Infernal</p>
-                        </div>
-                        <div class="box-score-3">
-                            <p>Difficile</p>
-                        </div>
-                        <div class="box-score-4">
-                            <p>4:09.47</p>
-                        </div>
-
-
-                    </div>
-                    <div class="main-box-score2">
-
-                        <div class="box-score-1">
-                            <p>Jiafeydu95</p>
-                        </div>
-                        <div class="box-score-2">
-                            <p>Infernal</p>
-                        </div>
-                        <div class="box-score-3">
-                            <p>Difficile</p>
-                        </div>
-                        <div class="box-score-4">
-                            <p>4:09.47</p>
-                        </div>
-
-                    </div>
+                    
 
                 </div>
+                <div class="main-box-score2">
+
+                    <div class="box-score-1">
+                        <p>Jiafeydu95</p>
+                    </div>
+                    <div class="box-score-2">
+                        <p>Infernal</p>
+                    </div>
+                    <div class="box-score-3">
+                        <p>Difficile</p>
+                    </div>
+                    <div class="box-score-4">
+                        <p>4:09.47</p>
+                    </div>
+                    
+
+                </div>
+                <div class="main-box-score2">
+
+                    <div class="box-score-1">
+                        <p>Jiafeydu95</p>
+                    </div>
+                    <div class="box-score-2">
+                        <p>Infernal</p>
+                    </div>
+                    <div class="box-score-3">
+                        <p>Difficile</p>
+                    </div>
+                    <div class="box-score-4">
+                        <p>4:09.47</p>
+                    </div>
+                    
+
+                </div>
+                <div class="main-box-score2">
+
+                    <div class="box-score-1">
+                        <p>Jiafeydu95</p>
+                    </div>
+                    <div class="box-score-2">
+                        <p>Infernal</p>
+                    </div>
+                    <div class="box-score-3">
+                        <p>Difficile</p>
+                    </div>
+                    <div class="box-score-4">
+                        <p>4:09.47</p>
+                    </div>
+                    
+
+                </div>
+
             </div>
+        </div>
 
 
 
