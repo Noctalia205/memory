@@ -49,11 +49,17 @@ function AfficheTempsRecord(): int
 
 /* FONCTION TABLE SCORE */
 
-function AfficheNomUtilisateurScore(): string
-{
+/*prendre la base de donnée SQL*/
+
+function  recupereScorePageDeScore() {
+
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT COUNT(username) AS NomUtilisateur FROM users');
+    $pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
+    FROM Score
+    INNER JOIN Game ON Score.id_game = Game.id
+    INNER JOIN Users ON Score.id_player = Users.id
+    ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
     $pdoStatement->execute();
-    $results5 = $pdoStatement->fetch();
-    return $results5->TempsRecord;
+    $Scores = $pdoStatement->fetchAll();
+    return $Scores;
 }

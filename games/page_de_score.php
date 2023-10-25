@@ -1,4 +1,7 @@
+<?php require_once '../utils/database.php' ?>
 <?php require_once '../utils/common.php' ?>
+
+
 <?php $title = 'Score';
 $page = 'Score'; ?>
 <!DOCTYPE html>
@@ -34,83 +37,22 @@ $page = 'Score'; ?>
                             <thead>
                                 <tr>
                                     <th>id</th>
-                                    <th>Nom de l'utilisateur</th>
+                                    <th> Nom de l'utilisateur</th>
                                     <th>Nom du jeu</th>
                                     <th>Difficulté</th>
                                     <th>Score</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php foreach (recupereScorePageDeScore() as $score): ?>
                                 <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
+                                    <td><?= $score -> id;?> </td>
+                                    <td><?= $score -> username;?></td>
+                                    <td><?= $score -> name_game;?></td>
+                                    <td><?= $score -> difficulties;?></td>
+                                    <td><?= $score -> scoring;?> </td>
                                 </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </section>
