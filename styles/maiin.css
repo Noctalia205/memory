@@ -40,8 +40,7 @@ body {
     background-color: #0f0e28;
 }
 
-.case1,
-.case {
+.case1 .case {
 
     display: inline-block;
     height: 30px;
@@ -98,6 +97,7 @@ body {
 }
 
 .case1 {
+
     background-color: rgba(39, 38, 69, 255);
     margin-left: 35%;
 }
@@ -375,7 +375,6 @@ span {
 
 }
 
-.block_user1 {}
 
 .chat-user1 span {
 
@@ -412,7 +411,6 @@ span {
 
 }
 
-.posimg-pp {}
 
 .blocktxt_user2 {
 
@@ -959,6 +957,16 @@ body {
 
 }
 
+
+/*BARRE DE RECHERHCE*/
+
+.search_container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* TABLEAU DES SCORES*/
 
 
@@ -970,20 +978,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:url(../assets/tableau-background.png)center/cover;
-   font-family: "Poppins";
-   color: whitesmoke;
+    background: url(../assets/tableau-background.png)center/cover;
+    font-family: "Poppins";
+    color: whitesmoke;
 
 }
 
 
 
-main.table{
+main.table {
     width: 82vw;
     height: 90vh;
 }
 
-.table__body{
+.table__body {
     width: 95%;
     max-height: 89%;
     background-color: rgba(191, 192, 193, 0.329);
@@ -992,22 +1000,33 @@ main.table{
     overflow: auto;
     margin-right: 11rem;
 }
-.table__body th{
+
+.table__body th {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 20px;
 }
 
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
 
 thead th {
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: rgba(192, 193, 194, 0.269);
 }
 
 
-table, th, td{
+table,
+th,
+td {
     padding: 1rem;
     border-collapse: collapse;
 
@@ -1193,7 +1212,6 @@ BODY*/
 
 }
 
-.pp_block {}
 
 .pp_gohan {
 
@@ -1419,6 +1437,10 @@ BODY*/
 
 
 
+}
+
+.white-texte {
+    color: white;
 }
 
 .flex {

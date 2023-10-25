@@ -13,6 +13,7 @@ $page = 'Score'; ?>
 
 <?php require_once SITE_ROOT . ('partials/header.php') ?>
 <header>
+
     <div class="banner-score">
         <div class="title-score">SCORE</div>
     </div>
@@ -25,39 +26,50 @@ $page = 'Score'; ?>
                 </div>
             </div>
         </div>
+        <div class="box_searchbar_container">
+            <table class="element_searchbar">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Recherche" class="Recherche">
+                    </td>
+                    <td>
+                        <a href="#"> <img src="../" </a>
+                    </td>
+                </tr>
+            </table>
 
-        <body>
-            <main class="table_score">
-                <div class="table_score_container">
+        </div>
+        <main class="table_score">
+            <div class="table_score_container">
                 <section class="table__header">
                     <h1>Tableau des scores</h1>
                 </section>
-                    <section class="table__body">
-                        <table>
-                            <thead>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th> Nom de l'utilisateur</th>
+                                <th>Nom du jeu</th>
+                                <th>Difficulté</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach (recupereScorePageDeScore() as $score) : ?>
                                 <tr>
-                                    <th>id</th>
-                                    <th> Nom de l'utilisateur</th>
-                                    <th>Nom du jeu</th>
-                                    <th>Difficulté</th>
-                                    <th>Score</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php foreach (recupereScorePageDeScore() as $score): ?>
-                                <tr>
-                                    <td><?= $score -> id;?> </td>
-                                    <td><?= $score -> username;?></td>
-                                    <td><?= $score -> name_game;?></td>
-                                    <td><?= $score -> difficulties;?></td>
-                                    <td><?= $score -> scoring;?> </td>
+                                    <td><?= $score->id; ?> </td>
+                                    <td><?= $score->username; ?></td>
+                                    <td><?= $score->name_game; ?></td>
+                                    <td><?= $score->difficulties; ?></td>
+                                    <td><?= $score->scoring; ?> </td>
                                 </tr>
                             <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </section>
-                </div>
-            </main>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
         </body>
     </div>
 
