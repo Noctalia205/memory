@@ -1,4 +1,6 @@
 <?php require_once '../utils/common.php' ?>
+<?php $title = 'Jeu';
+$page = 'Jeu';?>
 <!doctype html>
 <html lang="fr">
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
@@ -321,7 +323,7 @@
     <div class="chatbox-container">
         <div class="chatbox-high" >  
             <div class="pp-position">
-            <img class="pp" src="img/photo_profil.png">
+            <img class="pp" src="<?php echo PROJECT_FOLDER?>assets/photo_profil.png">
             </div>
             <p class="txt-top">
                 Chat général
@@ -343,7 +345,7 @@
            </div>
            <div class="block_user2">
             <div class="posimg-pp">
-            <img class="photo_profil_user2" src="img/rebeudeter_photoprofil.png" alt="rebeudeter">
+            <img class="photo_profil_user2" src="<?php echo PROJECT_FOLDER?>assets/rebeudeter_photoprofil.png" alt="rebeudeter">
             </div>
             <div class="blocktxt_user2">
             <p class="name-user2">
