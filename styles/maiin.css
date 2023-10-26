@@ -1030,6 +1030,38 @@ table, th, td{
  NAVIGATION */
 
 
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------
+BODY*/
+
+
 :root {
     --main-border-color: #0f0e28;
 }
@@ -1051,119 +1083,6 @@ table, th, td{
 
 
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-.write {
-    font-size: 30px;
-}
-
-
-.logo {
-    flex: 3;
-    font-family: "Poppins";
-    font-size: 20px;
-    margin-top: 1.5%;
-
-}
-
-
-
-
-
-.main-nav {
-    display: flex;
-    position: fixed;
-    width: 98.2%;
-    margin-top: -2.5em;
-    color: white;
-    padding: 1em;
-    font-family: "Poppins";
-    background-color: rgb(10, 0, 31);
-    padding-top: 4%;
-
-}
-
-.main-nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.main-nav li {
-    margin-right: 4em;
-    margin-top: 4%;
-}
-
-.main-nav>form {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.main-nav input {
-    flex: 1;
-}
-
-
-.main-nav ul {
-    flex-direction: row;
-    /* Change this to 'column' to stack the links */
-
-
-}
-
-.navpoint {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition-duration: 0.5s;
-    display: inline-block;
-
-}
-
-ul :hover {
-    font-size: 17px;
-    font-weight: 90px;
-    transition: font-size .1s linear,
-        font-weight .1s linear;
-    border-radius: 10%;
-    -webkit-text-fill-color: orange;
-}
-
-
-.listefooter {
-    color: grey;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------------------------------------------------------------------------------------------------------
-BODY*/
-
-
 .title-top {
     color: #ffffff;
     border: var(--main-border-color);
@@ -1176,9 +1095,8 @@ BODY*/
 
 .image-top {
     background-image: url("../assets/villefuturiste.jpg");
-    width: 87.2%;
     text-align: center;
-    padding: 6.1%;
+    padding: 3%;
     font-family: sans-serif;
     padding-top: 3%;
     margin-top: -5.1%;
@@ -1208,7 +1126,7 @@ BODY*/
     height: 258px;
     border: solid white 5px;
     border-radius: 50%;
-    margin-left: 37.7%;
+    margin-left: 40%;
     position: absolute;
     margin-top: -10%;
     outline: white 1px;
@@ -1216,7 +1134,7 @@ BODY*/
 
 .positionpseudo_MyAccount {
 
-    padding-top: 7%;
+    padding-top: 3%;
     display: flex;
     justify-content: center;
 
@@ -1270,7 +1188,7 @@ BODY*/
     color: white;
     justify-content: center;
     display: flex;
-    margin-top: 10%;
+    margin-top: 5%;
 
 
 }

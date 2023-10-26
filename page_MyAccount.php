@@ -4,7 +4,7 @@ $page = 'Pseudo';?>
 <!doctype html>
 <html lang="fr">
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
-<br><br><br>
+<br>
   <body class="page_MyAccount">
   <?php require_once SITE_ROOT . ('partials/header.php') ?>
 
