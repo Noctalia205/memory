@@ -1,5 +1,5 @@
-<?php require_once '../utils/database.php' ?>
-<?php require_once '../utils/common.php' ?>
+<?php require_once '../utils/common.php'; ?>
+<?php require_once '../utils/database.php'; ?>
 
 
 <?php $title = 'Score';
@@ -8,10 +8,10 @@ $page = 'Score'; ?>
 
 <html lang="fr">
 
-<?php require_once SITE_ROOT . ('partials/head.php') ?>
+<?php require_once SITE_ROOT . ('partials/head.php'); ?>
 
 
-<?php require_once SITE_ROOT . ('partials/header.php') ?>
+<?php require_once SITE_ROOT . ('partials/header.php'); ?>
 <header>
 
     <div class="banner-score">
@@ -26,17 +26,13 @@ $page = 'Score'; ?>
                 </div>
             </div>
         </div>
-        <div class="box_searchbar_container">
-            <table class="element_searchbar">
-                <tr>
-                    <td>
-                        <input type="text" placeholder="Recherche" class="Recherche">
-                    </td>
-                    <td>
-                        <a href="#"> <img src="../" </a>
-                    </td>
-                </tr>
-            </table>
+        <div class="barre_de_recherche_container">
+            <form method="$_GET">
+                <input name="BarreDeRecherche" placeholder="Tape ma bestie !">
+        </div>
+        <input type="submit" value="Rechercher" />
+        </form>
+        <div class="resultat_recherche">
 
         </div>
         <main class="table_score">
@@ -56,15 +52,14 @@ $page = 'Score'; ?>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach (recupereScorePageDeScore() as $score) : ?>
-                                <tr>
-                                    <td><?= $score->id; ?> </td>
-                                    <td><?= $score->username; ?></td>
-                                    <td><?= $score->name_game; ?></td>
-                                    <td><?= $score->difficulties; ?></td>
-                                    <td><?= $score->scoring; ?> </td>
-                                </tr>
-                            <?php endforeach; ?>
+                            <?php
+                            if (isset($_GET['BarreDeRecherche']) && $_GET['BarreDeRecherche'] != "") {
+
+                                echo rechercheDeDonneesDansLaBarreDeRecherche();
+                            } else {
+                                echo recupereScorePageDeScore();
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </section>
@@ -80,6 +75,6 @@ $page = 'Score'; ?>
 
 </header>
 
-<?php require_once SITE_ROOT . ('partials/footer.php') ?>
+<?php require_once SITE_ROOT . ('partials/footer.php'); ?>
 
 </html>
