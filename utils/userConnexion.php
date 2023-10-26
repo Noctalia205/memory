@@ -17,7 +17,7 @@ function connexionUsers($userMail, $userPass, $userId, $userUsername): string {
         return 'Mail ou mot de passe incorrect ou inexistant';
     }
     else {
-        session_start();
+        //session_start();
         $_SESSION["userID"] = $userId;
         
         $pdoGetFromSession = $pdo->prepare("SELECT username FROM Users WHERE id = :id");
