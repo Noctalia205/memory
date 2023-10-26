@@ -61,22 +61,22 @@ $page = 'Accueil';?>
             <div class="all-block">
                 <div class="block1">
                     <div class="carre violet">
-                        <p><span>310</span></p>
+                        <p><span><?php echo AffichePartiesJouees()?></span></p>
                         <p>Parties Jouées</p>
                     </div>
                     <div class="carre vert">
-                        <p><span>1020</span></p>
+                        <p><span><?php echo AfficheJoueursConnectees()?></span></p>
                         <p>Joueurs connectés</p>
                     </div>
                 </div>
 
                 <div class="block2">
                     <div class="carre rose">
-                        <p><span>10 sec</span></p>
+                        <p><span><?php echo AfficheTempsRecord()?></span></p>
                         <p>Temps record</p>
                     </div>
                     <div class="carre orange">
-                        <p><span>21 300</span></p>
+                        <p><span><?php echo AfficheJoueursInscrits()?></span></p>
                         <p>Joueurs inscrit </p>
                     </div>
                 </div>
