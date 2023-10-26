@@ -19,7 +19,7 @@ if (isset($_SESSION["userID"])) : ?>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>games/page_de_score.php" class="<?= $page == 'Score' ? 'active' : '' ?> ">Score</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_contact.php" class="<?= $page == 'Nous Contacter' ? 'active' : '' ?> ">Nous contacter</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_login.php" class="<?= $page == 'Connexion' ? 'active' : '' ?> ">Connexion</a></li>
-                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER; ?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active' : '' ?>"><?php echo $userSessionId->username;?></a></div>
+                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER; ?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active' : '' ?>"><?php if (isset($userSessionId->username)){echo $userSessionId->username;}?></a></div>
             </ul>
         </nav>
 
@@ -35,7 +35,7 @@ if (isset($_SESSION["userID"])) : ?>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>games/page_de_score.php" class="<?= $page == 'Score' ? 'active' : '' ?> ">Score</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_contact.php" class="<?= $page == 'Nous Contacter' ? 'active' : '' ?> ">Nous contacter</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_login.php" class="<?= $page == 'Connexion' ? 'active' : '' ?> ">Connexion</a></li>
-                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER; ?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active' : '' ?>"><?php echo $userSessionId->username;?></a>Pseudo</div>
+                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER; ?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active' : '' ?>"><?php if (isset($userSessionId->username)){echo $userSessionId->username;}?></a>Pseudo</div>
             </ul>
         </nav>
 
