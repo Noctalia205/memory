@@ -40,8 +40,7 @@ body {
     background-color: #0f0e28;
 }
 
-.case1,
-.case {
+.case1 .case {
 
     display: inline-block;
     height: 30px;
@@ -98,6 +97,7 @@ body {
 }
 
 .case1 {
+    
     background-color: rgba(39, 38, 69, 255);
     margin-left: 35%;
 }
@@ -1427,6 +1427,10 @@ BODY*/
 
 
 
+}
+
+.white-texte{
+    color: white;
 }
 
 .flex {

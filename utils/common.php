@@ -57,3 +57,42 @@ function AfficheNomUtilisateurScore(): string
     $results5 = $pdoStatement->fetch();
     return $results5->TempsRecord;
 }
+
+
+/* FONCTION INSERER UTILISATEUR */
+
+function InsererUnUtilisateur($pseudo, $mail, $password)
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
+     
+    
+    
+    
+    return filter_var($mail, FILTER_VALIDATE_EMAIL);
+
+    $pdoStatement->execute([
+        ':mail' => $mail,
+        ':pass' => password_hash($password, PASSWORD_DEFAULT),
+        ':username' => $pseudo,
+    ]);
+}
+
+function isMailValid($mail): string
+{
+    return filter_var($mail, FILTER_VALIDATE_EMAIL);
+}
+
+function isPasswordValid($pseudo): string
+{
+
+    return filter_var($pseudo);
+    
+}
+
+ function isPseudoValid($password): string
+ {
+
+    return filter_var($password);
+    
+}

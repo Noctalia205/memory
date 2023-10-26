@@ -7,9 +7,9 @@ ENGINE = INNODB;
 
 CREATE TABLE Users(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    mail VARCHAR(256) NOT NULL,
+    mail VARCHAR(256) UNIQUE NOT NULL,
     pass VARCHAR(256) NOT NULL,
-    username VARCHAR(26) NOT NULL,
+    username VARCHAR(26) UNIQUE NOT NULL,
     date_sign_up DATETIME NOT NULL,
     date_last_connection DATETIME NOT NULL,
     PRIMARY KEY (id)
@@ -52,6 +52,8 @@ CREATE TABLE Game(
 
 
 -----INSERT-------
+
+
 -----Users--------
 INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection)
 VALUES ('carofil205@gmail.com', 'caroline.sql', 'Noctalia', '2023-10-16 00:01:00', '2023-11-17 00:00:00'),
