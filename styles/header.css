@@ -12,61 +12,21 @@ body{
     background-size: cover;
     background-position: center;
 }
-.write {
-    font-size: 30px;
-}
 
-
-.logo{
-    flex: 3;
-    font-family: "Poppins";
-    font-size: 20px;
-
-}
 .profil img{
     width: 67%;
     height: 37px;
     margin-top: 35%;
 
 }
-.main-nav {
-display: flex;
-color: white;
-font-family:"Poppins";
-background-color:rgb(0, 0, 0,0.5);
-padding-left:10px;
-padding-top: 2%;
-}
 
-.main-nav > ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-display: flex;
-}
+
 
 .navigator {
     color: white;
     text-decoration: none;
 }
 
-.main-nav li {
-margin-right: 4em;
-}
-.main-nav > form {
-display: flex;
-justify-content: flex-end;
-flex: 1;
-}
-.main-nav input {
-flex: 1;
-}
-
-
-.main-nav ul {
- flex-direction: row; /* Change this to 'column' to stack the links */
- margin-bottom: 1em;
-}
 
 .active {
     color: orange;
@@ -82,4 +42,90 @@ flex: 1;
 
 .profil {
     text-align: center;
+}
+
+
+
+
+.write {
+    font-size: 30px;
+}
+
+
+.logo {
+    flex: 3;
+    font-family: "Poppins";
+    font-size: 20px;
+    margin-top: 1.5%;
+
+}
+
+
+
+
+
+.main-nav {
+    display: flex;
+    position: fixed;
+    width: 98.2%;
+    margin-top: -5em;
+    color: white;
+    padding: 1em;
+    font-family: "Poppins";
+    background-color: rgba(10, 0, 31, 0.5);
+    padding-top: 4%;
+
+}
+
+.main-nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 4em;
+    margin-top: 4%;
+}
+
+.main-nav>form {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.main-nav input {
+    flex: 1;
+}
+
+
+.main-nav ul {
+    flex-direction: row;
+    /* Change this to 'column' to stack the links */
+
+
+}
+
+.navpoint {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    display: inline-block;
+
+}
+
+ul :hover {
+    font-size: 17px;
+    font-weight: 90px;
+    transition: font-size .1s linear,
+        font-weight .1s linear;
+    border-radius: 10%;
+    -webkit-text-fill-color: orange;
+}
+
+
+.listefooter {
+    color: grey;
 }
