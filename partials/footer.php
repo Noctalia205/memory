@@ -5,11 +5,11 @@
         <p class="one">Tel : <span>06 05 04 03 02</span><br /><br />
             Email : <span>support@powerofmemory.com</span><br /><br />
             Location : <span>Paris</span></p>
-        <a href="https://www.facebook.com/?locale=fr_FR"> <img src="assets/img_icones/icons8-facebook-circled-94.png" width=30px height=30px /></a>
-        <a href="https://twitter.com/?lang=fr"> <img src="assets/img_icones/icons8-twitter-circled-94.png" width=30px height=30px /></a>
-        <a href="https://www.google.fr/"> <img src="assets/img_icones/icons8-google-94.png" width=30px height=30px /></a>
-        <a href="https://www.pinterest.fr/"> <img src="assets/img_icones/icons8-pinterest-94.png" width=30px height=30px /></a>
-        <a href="https://www.instagram.com/"> <img src="assets/img_icones/icons8-instagram-94.png" width=30px height=30px /></a>
+        <a href="https://www.facebook.com/?locale=fr_FR"> <img src="<?php echo PROJECT_FOLDER ;?>assets/img_icones/icons8-facebook-circled-94.png" width=30px height=30px /></a>
+        <a href="https://twitter.com/?lang=fr"> <img src="<?php echo PROJECT_FOLDER ;?>assets/img_icones/icons8-twitter-circled-94.png" width=30px height=30px /></a>
+        <a href="https://www.google.fr/"> <img src="<?php echo PROJECT_FOLDER ;?>assets/img_icones/icons8-google-94.png" width=30px height=30px /></a>
+        <a href="https://www.pinterest.fr/"> <img src="<?php echo PROJECT_FOLDER ;?>assets/img_icones/icons8-pinterest-94.png" width=30px height=30px /></a>
+        <a href="https://www.instagram.com/"> <img src="<?php echo PROJECT_FOLDER ;?>assets/img_icones/icons8-instagram-94.png" width=30px height=30px /></a>
         <br /><br /><br /><br /><br />
         <p class="copyright-color">Copyright © 2023 Tous droits réservés</p><br>
     </div>

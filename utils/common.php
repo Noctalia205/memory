@@ -4,10 +4,95 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 define('ADMIN_MAIL', 'mail@gmail.com');
-define('PROJECT_FOLDER', '/memory/');  
-define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . PROJECT_FOLDER); 
+define('PROJECT_FOLDER', '/memory/');
+define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . PROJECT_FOLDER);
 
 session_start();
 
 
 
+function AfficheJoueursInscrits(): int
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT COUNT(id) AS JoueurInscrits FROM Users');
+    $pdoStatement->execute();
+    $results = $pdoStatement->fetch();
+    return $results->JoueurInscrits;
+}
+
+function AffichePartiesJouees(): int
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT COUNT(id) AS PartiesJouees FROM Game');
+    $pdoStatement->execute();
+    $results2 = $pdoStatement->fetch();
+    return $results2->PartiesJouees;
+}
+
+function AfficheJoueursConnectees(): int
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT COUNT(date_last_connection) AS JoueursConnectees FROM Users');
+    $pdoStatement->execute();
+    $results3 = $pdoStatement->fetch();
+    return $results3->JoueursConnectees;
+}
+
+function AfficheTempsRecord(): int
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT COUNT(best_time) AS TempsRecord FROM Score');
+    $pdoStatement->execute();
+    $results4 = $pdoStatement->fetch();
+    return $results4->TempsRecord;
+}
+
+/* FONCTION TABLE SCORE */
+
+function AfficheNomUtilisateurScore(): string
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT COUNT(username) AS NomUtilisateur FROM users');
+    $pdoStatement->execute();
+    $results5 = $pdoStatement->fetch();
+    return $results5->TempsRecord;
+}
+
+
+/* FONCTION INSERER UTILISATEUR */
+
+function InsererUnUtilisateur($pseudo, $mail, $password)
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
+     
+    
+    
+    
+    return filter_var($mail, FILTER_VALIDATE_EMAIL);
+
+    $pdoStatement->execute([
+        ':mail' => $mail,
+        ':pass' => password_hash($password, PASSWORD_DEFAULT),
+        ':username' => $pseudo,
+    ]);
+}
+
+function isMailValid($mail): string
+{
+    return filter_var($mail, FILTER_VALIDATE_EMAIL);
+}
+
+function isPasswordValid($pseudo): string
+{
+
+    return filter_var($pseudo);
+    
+}
+
+ function isPseudoValid($password): string
+ {
+
+    return filter_var($password);
+    
+}

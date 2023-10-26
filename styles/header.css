@@ -26,7 +26,6 @@ body{
 .profil img{
     width: 67%;
     height: 37px;
-    padding-right: 1em;
     margin-top: 35%;
 
 }
@@ -71,4 +70,16 @@ flex: 1;
 
 .active {
     color: orange;
+}
+
+.contentt{
+    text-align: center;
+}
+
+.textee{
+    text-align: center;
+}
+
+.profil {
+    text-align: center;
 }

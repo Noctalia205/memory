@@ -3,7 +3,7 @@ function connectToDbAndGetPdo(): PDO
 {
     $dbname = 'my_database';
     $host = 'localhost';
-    $dsn = "mysql:my_database=$dbname;host=$host;charset=utf8";
+    $dsn = "mysql:dbname=$dbname;host=$host;charset=utf8";
     $user = 'root';
     $pass = '';
     $driver_options = [
@@ -17,3 +17,4 @@ function connectToDbAndGetPdo(): PDO
         echo 'La connexion à la base de données a échouée.';
     }
 }
+

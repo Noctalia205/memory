@@ -10,7 +10,7 @@
 
     <div class="chatbox-container">
     <div class="chatbox-high">  
-        <img class="pp" src="assets/img/photo_profil.png">
+        <img class="pp" src="<?php echo PROJECT_FOLDER?>assets/img/photo_profil.png">
         <p class="txt-top">
             Chat général
         </p> 
@@ -30,7 +30,7 @@
         </p>
        </div>
        <div class="block_user2">
-        <img class="photo_profil_user2" src="assets/img/rebeudeter_photoprofil.png" alt="rebeudeter">
+        <img class="photo_profil_user2" src="<?php echo PROJECT_FOLDER?>assets/img/rebeudeter_photoprofil.png" alt="rebeudeter">
         <div class="blocktxt_user2">
         <p class="name-user2">
             rebeu_SOIN

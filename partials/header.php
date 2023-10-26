@@ -6,7 +6,7 @@
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>games/page_de_score.php" class="<?= $page == 'Score' ? 'active':'' ?> ">Score</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_contact.php" class="<?= $page == 'Nous Contacter' ? 'active':'' ?> ">Nous contacter</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_login.php" class="<?= $page == 'Connexion' ? 'active':'' ?> ">Connexion</a></li>
-                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php" ><img src="../assets/icon-connexion.png" alt="icon"></a></div>
+                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER ;?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active':'' ?>" ></a><div class="contentt"><div class="textee">Pseudo</div></div></div>
             </ul>
         </nav>
 
