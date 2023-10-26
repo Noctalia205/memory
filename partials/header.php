@@ -1,3 +1,8 @@
+<?php require_once SITE_ROOT . ('utils/userConnexion.php');
+require_once SITE_ROOT . ('utils/database.php');
+?>
+
+
 <header>        <nav class="main-nav">
             <div class="logo"><a href="index.php">Beginner SLAY Memory</a></div>
             <ul>
@@ -6,7 +11,7 @@
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>games/page_de_score.php" class="<?= $page == 'Score' ? 'active':'' ?> ">Score</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_contact.php" class="<?= $page == 'Nous Contacter' ? 'active':'' ?> ">Nous contacter</a></li>
                 <li class="navpoint"><a href="<?php echo PROJECT_FOLDER ?>page_login.php" class="<?= $page == 'Connexion' ? 'active':'' ?> ">Connexion</a></li>
-                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER ;?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active':'' ?>" ></a><div class="contentt"><div class="textee">Pseudo</div></div></div>
+                <div class="profil"><a href="<?php echo PROJECT_FOLDER ?>page_MyAccount.php"><img src="<?php echo PROJECT_FOLDER ;?>assets/icon-connexion.png" class="<?= $page == 'Pseudo' ? 'active':'' ?>" ></a><div class="contentt"><div class="textee"><?php echo $userUsername?></div></div></div>
             </ul>
         </nav>
 
