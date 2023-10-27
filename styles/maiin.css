@@ -896,6 +896,33 @@ body {
 
 
 
+/*BARRE DE RECHERCHE*/
+
+.search_form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.barre_de_recherche_container {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+ 
+
+}
+
+
+    
+
 
 /* PAGE D'ACCUEIL*/
 
@@ -960,7 +987,7 @@ body {
 
 /*BARRE DE RECHERHCE*/
 
-.search_container{
+.search_container {
     display: flex;
     justify-content: center;
 }
