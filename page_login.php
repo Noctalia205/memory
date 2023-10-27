@@ -32,7 +32,7 @@ $userUsername = ''; ?>
         <label for="checkSouvenir" class="checksouvenirs">Se Souvenir de moi</label><br><br><br><br>
 
 
-        <p style="color: white; text-align: center;"> <?php if (isset($_POST['mail']) && isset($_POST['mdp'])) { echo connexionUsers($userMail, $userPass,  $userId, $userUsername);header("location:index.php");}?></p>
+        <p style="color: white; text-align: center;"> <?php if (isset($_POST['mail']) && isset($_POST['mdp'])) { echo connexionUsers($userMail, $userPass,  $userId, $userUsername);header("location:page_MyAccount.php");}?></p>
 
 
         
