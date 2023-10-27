@@ -49,10 +49,17 @@ function AfficheTempsRecord(): int
 
 /* FONCTION TABLE SCORE */
 
-function AfficheNomUtilisateurScore(): string
+/*prendre la base de donnée SQL*/
+
+function  recupereScorePageDeScore(): string
 {
+
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT COUNT(username) AS NomUtilisateur FROM users');
+    $pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
+    FROM Score
+    INNER JOIN Game ON Score.id_game = Game.id
+    INNER JOIN Users ON Score.id_player = Users.id
+    ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
     $pdoStatement->execute();
     $results5 = $pdoStatement->fetch();
     return $results5->TempsRecord;
@@ -80,22 +87,22 @@ function isPseudoExist(string $pseudo): bool
 
 
 
-// function isPasswordExist(): bool
-// {
-//     if (($_GET['password']) == ($_GET['confirmPassword'])) {
+function isPasswordExist(): bool
+{
+     if (($_GET['password']) == ($_GET['confirmPassword'])) {
 
-//         if (preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/i", ($_GET['password']))) {
+         if (preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/i", ($_GET['password']))) {
 
-//             return true;
-//         } else {
+             return true;
+        } else {
 
-//             return false;
-//         }
-//     } else {
+            return false;
+        }
+    } else {
 
-//         return false;
-//     }
-// } 
+        return false;
+    }
+ } 
 
 // function checkall(): void
 // {
@@ -119,7 +126,7 @@ function isPseudoExist(string $pseudo): bool
 
 /* FONCTION INSERER UTILISATEUR */
 
-// function InsererUnUtilisateur($pseudo, $mail, $password)
+ //function InsererUnUtilisateur($pseudo, $mail, $password)
 // {
 //     $pdo = connectToDbAndGetPdo();
 //     $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
@@ -135,3 +142,47 @@ function isPseudoExist(string $pseudo): bool
 //         ':username' => $pseudo,
 //     ]);
 // }
+$Scores = $pdoStatement->fetchAll();
+$affichage = "";
+foreach ($Scores as $key) {
+    $affichage .= "<tr>";
+    $affichage .= "<td> $key->id </td>";
+    $affichage .= "<td> $key->username </td>";
+    $affichage .= "<td> $key->name_game </td>";
+    $affichage .= "<td> $key->difficulties </td>";
+    $affichage .= "<td> $key->scoring  </td>";
+    $affichage .= "</tr>";
+
+   
+}
+return $affichage;
+
+
+/*fonction qui permet de fitrer les résultats dans la barre de recherche*/
+
+function rechercheDeDonneesDansLaBarreDeRecherche(): string
+{
+$recherche= $_GET['BarreDeRecherche'];
+$pdo = connectToDbAndGetPdo();
+$pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
+FROM Score
+INNER JOIN Game ON Score.id_game = Game.id
+INNER JOIN Users ON Score.id_player = Users.id
+WHERE Users.username = :pseudo
+ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
+$pdoStatement->execute([":pseudo"=>$recherche]);
+$Scores = $pdoStatement->fetchAll();
+$affichage = "";
+foreach ($Scores as $key) {
+    $affichage .= "<tr>";
+    $affichage .= "<td> $key->id </td>";
+    $affichage .= "<td> $key->username </td>";
+    $affichage .= "<td> $key->name_game </td>";
+    $affichage .= "<td> $key->difficulties </td>";
+    $affichage .= "<td> $key->scoring  </td>";
+    $affichage .= "</tr>";
+
+    
+}
+return $affichage;
+}

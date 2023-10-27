@@ -167,7 +167,7 @@ SELECT mail, pass FROM Users;
 
 -----
 
-SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring
+SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
 FROM Score
 INNER JOIN Game ON Score.id_game = Game.id
 INNER JOIN Users ON Score.id_player = Users.id
