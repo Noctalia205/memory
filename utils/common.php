@@ -59,40 +59,79 @@ function AfficheNomUtilisateurScore(): string
 }
 
 
-/* FONCTION INSERER UTILISATEUR */
 
-function InsererUnUtilisateur($pseudo, $mail, $password)
+
+function isMailExist($mail): bool
 {
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
+    $pdoisMailValid = $pdo->prepare('SELECT mail FROM Users WHERE mail = :mail');
+    $pdoisMailValid->execute([':mail' => "$mail"]);
+    return $pdoisMailValid->rowCount() == 0;
+}
+
+function isPseudoExist(string $pseudo): bool
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoisPseudoValid = $pdo->prepare('SELECT username FROM Users WHERE username = :pseudo');
+    $pdoisPseudoValid->execute([':pseudo' => "$pseudo"]);
+    return $pdoisPseudoValid->rowCount() == 0;
+}
+
+
+
+
+// function isPasswordExist(): bool
+// {
+//     if (($_GET['password']) == ($_GET['confirmPassword'])) {
+
+//         if (preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/i", ($_GET['password']))) {
+
+//             return true;
+//         } else {
+
+//             return false;
+//         }
+//     } else {
+
+//         return false;
+//     }
+// } 
+
+// function checkall(): void
+// {
+//     if (
+
+        
+
+
+
+
+
+
+// )
+
+
+
+// }
+
+
+
+
+/* FONCTION INSERER UTILISATEUR */
+
+// function InsererUnUtilisateur($pseudo, $mail, $password)
+// {
+//     $pdo = connectToDbAndGetPdo();
+//     $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
      
     
     
     
-    return filter_var($mail, FILTER_VALIDATE_EMAIL);
+//     return filter_var($mail, FILTER_VALIDATE_EMAIL);
 
-    $pdoStatement->execute([
-        ':mail' => $mail,
-        ':pass' => password_hash($password, PASSWORD_DEFAULT),
-        ':username' => $pseudo,
-    ]);
-}
-
-function isMailValid($mail): string
-{
-    return filter_var($mail, FILTER_VALIDATE_EMAIL);
-}
-
-function isPasswordValid($pseudo): string
-{
-
-    return filter_var($pseudo);
-    
-}
-
- function isPseudoValid($password): string
- {
-
-    return filter_var($password);
-    
-}
+//     $pdoStatement->execute([
+//         ':mail' => $mail,
+//         ':pass' => password_hash($password, PASSWORD_DEFAULT),
+//         ':username' => $pseudo,
+//     ]);
+// }
