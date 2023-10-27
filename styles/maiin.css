@@ -20,12 +20,12 @@
     cursor: pointer;
     display: inline-block;
     border: 1px solid #ffffff;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 .boutonConfirmer,
 .boutonEnvoyer {
-    margin-left: 46%;
+    margin-left: 45%;
 }
 
 .bouton:hover,
@@ -45,6 +45,7 @@ body {
     display: inline-block;
     height: 30px;
     width: 30%;
+    
 }
 .erreurMailnonCorrect {
 
@@ -145,6 +146,59 @@ body {
 
 }
 
+.case1 {
+    background-color: rgba(39, 38, 69, 255);
+    color: white;
+    margin-left: 37%;
+    width: 25%;
+    height: 55px;
+}
+
+.erreurMailnonCorrect {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
+
+.Pseudodeja_pris {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;    
+
+}
+
+.erreurPseudo_carac {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 2%;
+
+}
+
+.passwordCorrect {
+
+    color: red  ;
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+
+
+.erreurConfirmPassword {
+
+    color: red;
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
+
+
 
 
 .titre1 {
@@ -155,7 +209,8 @@ body {
 }
 
 .boutonEnvoyer {
-    margin-left: 45%;
+    margin-left: 46%;
+    margin-top: 5%;
 }
 
 a {
@@ -164,7 +219,7 @@ a {
 }
 
 .listefooter {
-    color: grey;
+    color: white;
 }
 
 h2 {
@@ -309,8 +364,12 @@ td {
 }
 
 .inscription {
-    margin-left: 35%;
+    margin-left: 37%;
     color: grey;
+}
+
+.register-form {
+    color: white;
 }
 
 .background-DBZ {
@@ -387,7 +446,7 @@ td {
 
 .txt-chatboxusers {
 
-    color: black;
+    color: grey;
 
 }
 
@@ -419,7 +478,6 @@ span {
     border-top-right-radius: 0%;
 
 }
-
 
 
 .chat-user1 span {
@@ -456,7 +514,6 @@ span {
     margin-left: -25%;
 
 }
-
 
 
 .blocktxt_user2 {
@@ -593,7 +650,7 @@ span {
 }
 
 .checkSouvenir {
-    margin-left: 35%;
+    margin-left: 37%;
 }
 
 .checksouvenirs {
@@ -943,6 +1000,33 @@ body {
 
 
 
+/*BARRE DE RECHERCHE*/
+
+.search_form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.barre_de_recherche_container {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+ 
+
+}
+
+
+    
+
 
 /* PAGE D'ACCUEIL*/
 
@@ -1004,6 +1088,16 @@ body {
 
 }
 
+
+/*BARRE DE RECHERHCE*/
+
+.search_container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* TABLEAU DES SCORES*/
 
 
@@ -1038,20 +1132,20 @@ input .barre_recherche{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:url(../assets/tableau-background.png)center/cover;
-   font-family: "Poppins";
-   color: whitesmoke;
+    background: url(../assets/tableau-background.png)center/cover;
+    font-family: "Poppins";
+    color: whitesmoke;
 
 }
 
 
 
-main.table{
+main.table {
     width: 82vw;
     height: 90vh;
 }
 
-.table__body{
+.table__body {
     width: 95%;
     max-height: 89%;
     background-color: rgba(191, 192, 193, 0.329);
@@ -1060,7 +1154,8 @@ main.table{
     overflow: auto;
     margin-right: 11rem;
 }
-.table__body th{
+
+.table__body th {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 20px;
@@ -1077,13 +1172,15 @@ td img {
 
 thead th {
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: rgba(192, 193, 194, 0.269);
 }
 
 
-table, th, td{
+table,
+th,
+td {
     padding: 1rem;
     border-collapse: collapse;
 
@@ -1359,7 +1456,7 @@ BODY*/
 }
 
 .four {
-    color: black !important;
+    color: white !important;
 }
 
 
@@ -1414,7 +1511,7 @@ BODY*/
 
 }
 
-.white-texte{
+.white-texte {
     color: white;
 }
 
