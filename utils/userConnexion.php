@@ -1,7 +1,7 @@
 <?php /* CONNEXION USER */
 require_once SITE_ROOT . ('utils/database.php');
 
-function connexionUsers($userMail, $userPass, $userId, $userUsername): string
+function connexionUsers($userMail, $userPass, $userId): string
 {
     $userMail = $_POST['mail'];
     $userPass = $_POST['mdp'];
