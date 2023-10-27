@@ -80,6 +80,7 @@ function isPseudoExist(string $pseudo): bool
 
 
 
+
 // function isPasswordExist(): bool
 // {
 //     if (($_GET['password']) == ($_GET['confirmPassword'])) {
@@ -119,19 +120,14 @@ function isPseudoExist(string $pseudo): bool
 
 /* FONCTION INSERER UTILISATEUR */
 
-// function InsererUnUtilisateur($pseudo, $mail, $password)
-// {
-//     $pdo = connectToDbAndGetPdo();
-//     $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
-     
-    
-    
-    
-//     return filter_var($mail, FILTER_VALIDATE_EMAIL);
-
-//     $pdoStatement->execute([
-//         ':mail' => $mail,
-//         ':pass' => password_hash($password, PASSWORD_DEFAULT),
-//         ':username' => $pseudo,
-//     ]);
-// }
+function InsererUnUtilisateur($pseudo, $mail, $password)
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
+    return filter_var($mail, FILTER_VALIDATE_EMAIL);
+    $pdoStatement->execute([
+        ':mail' => $mail,
+        ':pass' => password_hash($password, PASSWORD_DEFAULT),
+        ':username' => $pseudo,
+    ]);
+}
