@@ -12,12 +12,11 @@ function connexionUsers($userMail, $userPass, $userId, $userUsername): string {
     $loginInfos = $pdoStatement->fetch();
     if($pdoStatement->rowCount() < 1) return "utilisateur introuvable";
     $userId = $loginInfos->id;
-    $userUsername = $loginInfos->username;
+    
     if ($userId == null) {
         return 'Mail ou mot de passe incorrect ou inexistant';
     }
     else {
-        //session_start();
         $_SESSION["userID"] = $userId;
         
         $pdoGetFromSession = $pdo->prepare("SELECT username FROM Users WHERE id = :id");
