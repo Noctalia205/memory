@@ -87,22 +87,22 @@ function isPseudoExist(string $pseudo): bool
 
 
 
-// function isPasswordExist(): bool
-// {
-//     if (($_GET['password']) == ($_GET['confirmPassword'])) {
+function isPasswordExist(): bool
+{
+     if (($_GET['password']) == ($_GET['confirmPassword'])) {
 
-//         if (preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/i", ($_GET['password']))) {
+         if (preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/i", ($_GET['password']))) {
 
-//             return true;
-//         } else {
+             return true;
+        } else {
 
-//             return false;
-//         }
-//     } else {
+            return false;
+        }
+    } else {
 
-//         return false;
-//     }
-// } 
+        return false;
+    }
+ } 
 
 // function checkall(): void
 // {
@@ -126,7 +126,7 @@ function isPseudoExist(string $pseudo): bool
 
 /* FONCTION INSERER UTILISATEUR */
 
-// function InsererUnUtilisateur($pseudo, $mail, $password)
+ //function InsererUnUtilisateur($pseudo, $mail, $password)
 // {
 //     $pdo = connectToDbAndGetPdo();
 //     $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
@@ -186,21 +186,3 @@ foreach ($Scores as $key) {
 }
 return $affichage;
 }
-
-
-
-
-
-
-// {
-//     $pdo = connectToDbAndGetPdo();
-//     $pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
-//     FROM Score
-//     INNER JOIN Game ON Score.id_game = Game.id 
-//     INNER JOIN Users ON Score.id_player = Users.id
-//     WHERE username LIKE :player. ;
-//     ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
-//     $pdoStatement->execute( [":player" => "%". $pseudo ."%"]);
-//     $Scores = $pdoStatement->fetchAll();
-//     return $Scores;
-// } 
