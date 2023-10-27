@@ -1,15 +1,19 @@
-<?php require_once '../utils/common.php' ?>
+<?php require_once '../utils/common.php'; ?>
+<?php require_once '../utils/database.php'; ?>
+
+
 <?php $title = 'Score';
 $page = 'Score'; ?>
 <!DOCTYPE html>
 
 <html lang="fr">
 
-<?php require_once SITE_ROOT . ('partials/head.php') ?>
+<?php require_once SITE_ROOT . ('partials/head.php'); ?>
 
 
-<?php require_once SITE_ROOT . ('partials/header.php') ?>
+<?php require_once SITE_ROOT . ('partials/header.php'); ?>
 <header>
+
     <div class="banner-score">
         <div class="title-score">SCORE</div>
     </div>
@@ -22,101 +26,44 @@ $page = 'Score'; ?>
                 </div>
             </div>
         </div>
+        <div class="barre_de_recherche_container">
+            <form class="search_form" method="$_GET">
+                <input name="BarreDeRecherche" placeholder="Tape ma bestie !" class="barre_recherche">
+                <input type="submit" value="Rechercher" />
+            </form>
+        </div>
+    </div>
+    <main class="table_score">
+        <div class="table_score_container">
+            <section class="table__header">
+                <h1>Tableau des scores</h1>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th> Nom de l'utilisateur</th>
+                            <th>Nom du jeu</th>
+                            <th>Difficulté</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        if (isset($_GET['BarreDeRecherche']) && $_GET['BarreDeRecherche'] != "") {
 
-        <body>
-            <main class="table_score">
-                <div class="table_score_container">
-                <section class="table__header">
-                    <h1>Tableau des scores</h1>
-                </section>
-                    <section class="table__body">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>id</th>
-                                    <th>Nom de l'utilisateur</th>
-                                    <th>Nom du jeu</th>
-                                    <th>Difficulté</th>
-                                    <th>Score</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Jiafei<img src="../assets/Jiafei-1.jpg" alt="icon jiafei" </td>
-                                    <td> Infernal</td>
-                                    <td> Difficile</td>
-                                    <td> 99 999 </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </div>
-            </main>
-        </body>
+                            echo rechercheDeDonneesDansLaBarreDeRecherche();
+                        } else {
+                            echo recupereScorePageDeScore();
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    </body>
     </div>
 
     </div>
@@ -126,6 +73,6 @@ $page = 'Score'; ?>
 
 </header>
 
-<?php require_once SITE_ROOT . ('partials/footer.php') ?>
+<?php require_once SITE_ROOT . ('partials/footer.php'); ?>
 
 </html>

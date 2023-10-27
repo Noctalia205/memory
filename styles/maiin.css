@@ -46,7 +46,56 @@ body {
     height: 30px;
     width: 30%;
 }
+.erreurMailnonCorrect {
 
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
+
+.Pseudodeja_pris {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
+.erreurPseudo_carac {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 2%;
+
+}
+
+.passwordCorrect {
+
+    color: red  ;
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+
+
+.erreurConfirmPassword {
+
+    color: red;
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+.case1 {
+
+    background-color: rgba(39, 38, 69, 255);
+    color: white;
+    margin-left: 37%;
+    width: 25%;
+    height: 55px;
+}
 .textarea {
 
     display: block;
@@ -96,11 +145,7 @@ body {
 
 }
 
-.case1 {
-    
-    background-color: rgba(39, 38, 69, 255);
-    margin-left: 35%;
-}
+
 
 .titre1 {
     display: flex;
@@ -962,7 +1007,30 @@ body {
 /* TABLEAU DES SCORES*/
 
 
+.search_form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
 
+}
+input .barre_recherche{
+    border-radius: 100%;
+}
+
+.barre_de_recherche_container {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+ 
+
+}
 .table_score_container {
     box-sizing: border-box;
     font-family: "Poppins";
