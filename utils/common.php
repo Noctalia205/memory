@@ -59,23 +59,24 @@ function isMailExist($mail): bool
     $pdo = connectToDbAndGetPdo();
     $pdoisMailValid = $pdo->prepare('SELECT mail FROM Users WHERE mail = :mail');
     $pdoisMailValid->execute([':mail' => "$mail"]);
-    return $pdoisMailValid->rowCount() == 0;
+    return $pdoisMailValid->rowCount() > 0;
 }
 
-function isPseudoExist(string $pseudo): bool
+function isPseudoExist($pseudo): bool
 {
     $pdo = connectToDbAndGetPdo();
     $pdoisPseudoValid = $pdo->prepare('SELECT username FROM Users WHERE username = :pseudo');
     $pdoisPseudoValid->execute([':pseudo' => "$pseudo"]);
-    return $pdoisPseudoValid->rowCount() == 0;
+    return $pdoisPseudoValid->rowCount() > 0;
 }
 
+
+/* FONCTION INSERER UTILISATEUR */
 
 function InsererUnUtilisateur($pseudo, $mail, $password)
 {
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare("INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection) VALUES (:mail, :pass, :username, NOW(), NOW())");
-    return filter_var($mail, FILTER_VALIDATE_EMAIL);
     $pdoStatement->execute([
         ':mail' => $mail,
         ':pass' => password_hash($password, PASSWORD_DEFAULT),

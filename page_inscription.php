@@ -33,6 +33,7 @@ $pdo = connectToDbAndGetPdo();
 
             <?php if (isset($_POST['mail'])) :
                 if (isMailExist($_POST['mail'])) : ?>
+                if (isMailExist($_POST['mail'])) : ?>
                     <p class="Maildéjà_pris"> Mail déjà pris.</p>
             <?php endif;
             endif ?>
@@ -46,6 +47,7 @@ $pdo = connectToDbAndGetPdo();
             endif ?>
 
             <?php if (isset($_POST['pseudo'])) :
+                if (isPseudoExist($_POST['pseudo'])) : ?>
                 if (isPseudoExist($_POST['pseudo'])) : ?>
                     <p class="Pseudodeja_pris"> Pseudo déjà pris.</p>
             <?php endif;
@@ -79,14 +81,13 @@ $pdo = connectToDbAndGetPdo();
 
 
 if (
-
     isset($_POST['mail']) &&
     filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL) &&
-    !isMailExist($_POST['mail']) &&
+    !!isMailExist($_POST['mail']) &&
 
     isset($_POST['pseudo']) &&
-    !strlen($_POST['pseudo']) < 5 &&
-    !isPseudoExist($_POST['pseudo']) &&
+    strlen($_POST['pseudo']) >= 5 &&
+    !!isPseudoExist($_POST['pseudo']) &&
 
     isset($_POST['confirmPassword']) &&
     isset($_POST['password']) &&
@@ -95,9 +96,8 @@ if (
 
 
 ) {
-
+    
     InsererUnUtilisateur($_POST['pseudo'], $_POST['mail'], $_POST['password'])
-
 
 
 ?>
