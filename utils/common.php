@@ -156,7 +156,7 @@ foreach ($Scores as $key) {
    
 }
 return $affichage;
-}
+
 
 /*fonction qui permet de fitrer les résultats dans la barre de recherche*/
 
