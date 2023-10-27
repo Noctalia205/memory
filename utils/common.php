@@ -49,10 +49,17 @@ function AfficheTempsRecord(): int
 
 /* FONCTION TABLE SCORE */
 
-function AfficheNomUtilisateurScore(): string
+/*prendre la base de donnée SQL*/
+
+function  recupereScorePageDeScore(): string
 {
+
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT COUNT(username) AS NomUtilisateur FROM users');
+    $pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
+    FROM Score
+    INNER JOIN Game ON Score.id_game = Game.id
+    INNER JOIN Users ON Score.id_player = Users.id
+    ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
     $pdoStatement->execute();
     $results5 = $pdoStatement->fetch();
     return $results5->TempsRecord;
@@ -96,3 +103,65 @@ function isPasswordValid($pseudo): string
     return filter_var($password);
     
 }
+$Scores = $pdoStatement->fetchAll();
+$affichage = "";
+foreach ($Scores as $key) {
+    $affichage .= "<tr>";
+    $affichage .= "<td> $key->id </td>";
+    $affichage .= "<td> $key->username </td>";
+    $affichage .= "<td> $key->name_game </td>";
+    $affichage .= "<td> $key->difficulties </td>";
+    $affichage .= "<td> $key->scoring  </td>";
+    $affichage .= "</tr>";
+
+   
+}
+return $affichage;
+}
+
+/*fonction qui permet de fitrer les résultats dans la barre de recherche*/
+
+function rechercheDeDonneesDansLaBarreDeRecherche(): string
+{
+$recherche= $_GET['BarreDeRecherche'];
+$pdo = connectToDbAndGetPdo();
+$pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
+FROM Score
+INNER JOIN Game ON Score.id_game = Game.id
+INNER JOIN Users ON Score.id_player = Users.id
+WHERE Users.username = :pseudo
+ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
+$pdoStatement->execute([":pseudo"=>$recherche]);
+$Scores = $pdoStatement->fetchAll();
+$affichage = "";
+foreach ($Scores as $key) {
+    $affichage .= "<tr>";
+    $affichage .= "<td> $key->id </td>";
+    $affichage .= "<td> $key->username </td>";
+    $affichage .= "<td> $key->name_game </td>";
+    $affichage .= "<td> $key->difficulties </td>";
+    $affichage .= "<td> $key->scoring  </td>";
+    $affichage .= "</tr>";
+
+    
+}
+return $affichage;
+}
+
+
+
+
+
+
+// {
+//     $pdo = connectToDbAndGetPdo();
+//     $pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
+//     FROM Score
+//     INNER JOIN Game ON Score.id_game = Game.id 
+//     INNER JOIN Users ON Score.id_player = Users.id
+//     WHERE username LIKE :player. ;
+//     ORDER BY Game.name_game ASC, Users.username ASC, Score.difficulties ASC;');
+//     $pdoStatement->execute( [":player" => "%". $pseudo ."%"]);
+//     $Scores = $pdoStatement->fetchAll();
+//     return $Scores;
+// } 
