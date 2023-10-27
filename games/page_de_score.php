@@ -28,7 +28,7 @@ $page = 'Score'; ?>
         </div>
         <div class="barre_de_recherche_container">
             <form class="search_form" method="$_GET">
-                <input name="BarreDeRecherche" placeholder="Tape ma bestie !">
+                <input name="BarreDeRecherche" placeholder="Tape ma bestie !" class="barre_recherche">
                 <input type="submit" value="Rechercher" />
             </form>
         </div>

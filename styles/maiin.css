@@ -905,6 +905,9 @@ body {
     width: 100%;
 
 }
+input .barre_recherche{
+    border-radius: 100%;
+}
 
 .barre_de_recherche_container {
     display: flex;
