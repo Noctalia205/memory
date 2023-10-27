@@ -73,6 +73,7 @@ function isPseudoExist(string $pseudo): bool
 
 
 
+
 //function isPasswordExist(): bool
 //{
   //   if (($_GET['password']) == ($_GET['confirmPassword'])) {
