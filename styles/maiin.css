@@ -25,7 +25,7 @@
 
 .boutonConfirmer,
 .boutonEnvoyer {
-    margin-left: 46%;
+    margin-left: 45%;
 }
 
 .bouton:hover,
@@ -45,6 +45,7 @@ body {
     display: inline-block;
     height: 30px;
     width: 30%;
+    
 }
 
 .textarea {
@@ -99,8 +100,58 @@ body {
 .case1 {
     
     background-color: rgba(39, 38, 69, 255);
-    margin-left: 35%;
+    color: white;
+    margin-left: 37%;
+    width: 25%;
+    height: 55px;
 }
+
+.erreurMailnonCorrect {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
+
+.Pseudodeja_pris {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;    
+
+}
+
+.erreurPseudo_carac {
+
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 2%;
+
+}
+
+.passwordCorrect {
+
+    color: red  ;
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+
+
+.erreurConfirmPassword {
+
+    color: red;
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
+
+
+
 
 .titre1 {
     display: flex;
@@ -110,7 +161,8 @@ body {
 }
 
 .boutonEnvoyer {
-    margin-left: 45%;
+    margin-left: 46%;
+    margin-top: 5%;
 }
 
 a {
@@ -119,7 +171,7 @@ a {
 }
 
 .listefooter {
-    color: grey;
+    color: white;
 }
 
 h2 {
@@ -264,8 +316,12 @@ td {
 }
 
 .inscription {
-    margin-left: 35%;
+    margin-left: 37%;
     color: grey;
+}
+
+.register-form {
+    color: white;
 }
 
 .background-DBZ {
@@ -342,7 +398,7 @@ td {
 
 .txt-chatboxusers {
 
-    color: black;
+    color: grey;
 
 }
 
@@ -548,7 +604,7 @@ span {
 }
 
 .checkSouvenir {
-    margin-left: 35%;
+    margin-left: 37%;
 }
 
 .checksouvenirs {
@@ -1291,7 +1347,7 @@ BODY*/
 }
 
 .four {
-    color: black !important;
+    color: white !important;
 }
 
 
