@@ -58,7 +58,7 @@ CREATE TABLE Game(
 INSERT INTO Users (mail, pass, username, date_sign_up, date_last_connection)
 VALUES ('carofil205@gmail.com', 'caroline.sql', 'Noctalia', '2023-10-16 00:01:00', '2023-11-17 00:00:00'),
 ('vanou@gmail.com', 'vanou.sql', 'Jiafei', '2023-10-16 00:02:00', '2023-11-16 00:00:00'),
-('matiheu@gmail.com', 'mathieu.sql', 'Grizou', '2023-10-16 00:03:00', '2023-12-16 00:00:00'),
+('matiheu@gmail.com', 'Mathieu.sql#145', 'Grizou', '2023-10-16 00:03:00', '2023-12-16 00:00:00'),
 ('jojo@gmail.com', 'jojo.sql', 'joujou', '2023-10-16 00:04:00', '2023-12-20 00:00:00'),
 ('titi@gmail.com', 'titi.sql', 'thibou', '2023-10-16 00:05:00', '2023-11-23 00:00:00');
 
