@@ -42,6 +42,7 @@ $pdo = connectToDbAndGetPdo();
             <?php if (isset($_POST['pseudo'])) :
                 if (strlen($_POST['pseudo']) < 5) : ?>
                     <p class="erreurPseudo_carac"> Pseudo insérer en dessous de 4 caractères.</p>
+            
             <?php endif;
             endif ?>
 
@@ -81,11 +82,11 @@ $pdo = connectToDbAndGetPdo();
 if (
     isset($_POST['mail']) &&
     filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL) &&
-    !!isMailExist($_POST['mail']) &&
+    !isMailExist($_POST['mail']) &&
 
     isset($_POST['pseudo']) &&
     strlen($_POST['pseudo']) >= 5 &&
-    !!isPseudoExist($_POST['pseudo']) &&
+    !isPseudoExist($_POST['pseudo']) &&
 
     isset($_POST['confirmPassword']) &&
     isset($_POST['password']) &&

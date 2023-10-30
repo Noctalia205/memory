@@ -55,6 +55,13 @@ body {
 
 }
 
+.Maildéjà_pris {
+    margin-left: 37%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+
+}
+
 
 .Pseudodeja_pris {
 
@@ -80,6 +87,16 @@ body {
     margin-bottom: 1%;
 }
 
+.Inscreussi {
+
+    color: rgb(9, 203, 9);
+  margin-top: -1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+
+}
 
 .erreurConfirmPassword {
 
