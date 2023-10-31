@@ -9,7 +9,7 @@ $page = 'Jeu';?>
     <h1 class="titre1">The Power Of Memory</h1>
     
 
-    <div class="tableau_carte1">
+    <div class="tableau_carte1_FOOD">
     <table class="Easy">
         <tr>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
@@ -40,7 +40,7 @@ $page = 'Jeu';?>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
         </tr>
     </table></div><br><br><br>
-    <div class="tableau_carte2">
+    <div class="tableau_carte2_FOOD">
     <table class="Medium">
         <tr>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
@@ -122,7 +122,7 @@ $page = 'Jeu';?>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N2.png"></td>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
     </table></div><br><br><br>
-    <div class="tableau_carte3">
+    <div class="tableau_carte3_FOOD">
         <table class="Difficile">
             <tr>
                 <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>

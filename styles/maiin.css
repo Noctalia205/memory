@@ -328,7 +328,7 @@ h2 {
 
 }
 
-.tableau_carte1 {
+.tableau_carte1_DBZ {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -337,7 +337,7 @@ h2 {
 }
 
 
-.tableau_carte2 {
+.tableau_carte2_DBZ {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
@@ -345,7 +345,7 @@ h2 {
     justify-content: center;
 }
 
-.tableau_carte3 {
+.tableau_carte3_DBZ {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
@@ -354,6 +354,60 @@ h2 {
     margin-bottom: 100px;
 
 }
+.tableau_carte1_MEME {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.tableau_carte2_MEME {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+.tableau_carte3_MEME {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.tableau_carte1_FOOD {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.tableau_carte2_FOOD {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+.tableau_carte3_FOOD {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
 
 tr {
     margin: 100px;
