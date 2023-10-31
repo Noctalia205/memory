@@ -907,6 +907,7 @@ body {
 }
 input .barre_recherche{
     border-radius: 100%;
+    border:none;
 }
 
 .barre_de_recherche_container {

@@ -81,7 +81,8 @@ function  recupereScorePageDeScore(): string
 
 function rechercheDeDonneesDansLaBarreDeRecherche(): string
 {
-    $recherche= $_GET['BarreDeRecherche'];
+    $recherche= $_GET['B
+    arreDeRecherche'];
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT Game.name_game, Users.username, Score.difficulties, Score.scoring, Score.id_player as id
     FROM Score
