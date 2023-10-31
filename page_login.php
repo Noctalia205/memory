@@ -20,7 +20,7 @@ $page = 'Connexion';?>
   <form method="POST" action="traitement.php">
     <br>
         <input class="case1"  placeholder="Email" required="required"><br><br>
-        <input class="case1"  placeholder="Mot de passe"  required="required" ><br><br>
+        <input type="password" class="case1"  placeholder="Mot de passe"  required="required" ><br><br>
         <a class="inscription" a href="Mdp_oublier.php">Mot de Passe oublié ?</a><br><br>
         <a class="inscription" a href="page_inscription.php">Pas de compte ? S'inscrire</a><br><br>
         <input type="checkbox" class="checkSouvenir" name="Se Souvenir de moi" />

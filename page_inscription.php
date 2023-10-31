@@ -42,6 +42,7 @@ $pdo = connectToDbAndGetPdo();
             <?php if (isset($_POST['pseudo'])) :
                 if (strlen($_POST['pseudo']) < 5) : ?>
                     <p class="erreurPseudo_carac"> Pseudo insérer en dessous de 4 caractères.</p>
+            
             <?php endif;
             endif ?>
 
@@ -100,7 +101,7 @@ if (
 
 ?>
 
-    <p class="Inscreussi">Inscription réussi!</p>
+    <p class="Inscreussi">Inscription réussie !</p>
 
 <?php
 }

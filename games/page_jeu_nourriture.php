@@ -29,7 +29,7 @@ $page = 'Jeu';?>
         </div>
     </div><br><br><br>
 
-    <div class="tableau_carte1">
+    <div class="tableau_carte1_FOOD">
     <table class="Easy">
         <tr>
             <td class="carte"><img src="img/DBZ/DBZ1-removebg-preview.png"></td>
@@ -60,7 +60,7 @@ $page = 'Jeu';?>
             <td class="carte"><img src="img/DBZ/DBZ3-removebg-preview.png"></td>
         </tr>
     </table></div><br><br><br>
-    <div class="tableau_carte2">
+    <div class="tableau_carte2_FOOD">
     <table class="Medium">
         <tr>
             <td class="carte"><img src="img/DBZ/DBZ1-removebg-preview.png"></td>
@@ -142,7 +142,7 @@ $page = 'Jeu';?>
             <td class="carte"><img src="img/DBZ/DBZ18-removebg-preview.png"></td>
             <td class="carte"><img src="img/DBZ/DBZ24-removebg-preview.png"></td>
     </table></div><br><br><br>
-    <div class="tableau_carte3">
+    <div class="tableau_carte3_FOOD">
         <table class="Difficile">
             <tr>
                 <td class="carte"><img src="img/DBZ/DBZ1-removebg-preview.png"></td>
