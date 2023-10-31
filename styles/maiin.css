@@ -413,7 +413,18 @@ td {
     background: linear-gradient(70deg, #df0116, #9f000f, #fc9100, #fcf104)
 }
 
-
+.regles {
+    justify-content: center;
+    text-align: center;
+    font-family: "Poppins";
+    
+}
+.titre2 {
+    color: orange;
+}
+.p2 {
+    color: white;
+}
 
 
 /* CHATBOX*/
