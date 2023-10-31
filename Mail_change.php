@@ -12,7 +12,7 @@ $page = 'Connexion';?>
 
 
     <div class="image-container">
-        <h1 class="titre1">Changer Email</h1>
+        <h1 class="title-bo">Changer Email</h1>
 
     </div>
     </div>

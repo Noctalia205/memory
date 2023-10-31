@@ -16,7 +16,7 @@ $userUsername = ''; ?>
 <body>
     <?php require_once SITE_ROOT . ('partials/header.php') ?>
     <div class="image-container">
-        <h1 class="titre1">Connexion</h1>
+        <h1 class="title-bo">Connexion</h1>
 
     </div>
     </div>

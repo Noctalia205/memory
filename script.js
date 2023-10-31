@@ -24,3 +24,37 @@ if(select.value == ''){
             fileSelect_themes.insertAdjacentHTML('beforeend',
             '<p class="error"> Ce champ doit être rempli </p>')
         }
+
+
+
+
+        function checkPasswordStrength() {
+                const password = document.getElementById("passwordInput").value;
+                const progressBar = document.getElementById("progressBar");
+                const strengthText = document.getElementById("strengthText");
+                var reg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+              
+                const length = password.length;
+              
+
+                progressBar.style.width = length * 2 + "%";
+              
+               
+                console.log(reg.test(password))
+                if (reg.test(password)) {
+                  if (length > 7) {
+                    strengthText.textContent = "Fort";
+                    progressBar.style.backgroundColor = "green";
+                  } else {
+                    strengthText.textContent = "Moyen";
+                    progressBar.style.backgroundColor = "orange";
+                  }
+                } else if (length > 8) {
+                  strengthText.textContent = "Moyen";
+                  progressBar.style.backgroundColor = "orange";
+                } else {
+                  strengthText.textContent = "Faible";
+                  progressBar.style.backgroundColor = "red";
+                }
+              }
+              
