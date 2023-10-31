@@ -1707,3 +1707,38 @@ form>div {
     margin-top: 6%;
 
 }
+
+select {
+    width: 300px !important;
+    height: 30px !important;
+    margin-left: 40%;
+    background-color: orange;
+    text-align: center;
+    gap: 40%;
+    display: flex;
+    
+  }
+  
+  select option {
+    background-color: orange;
+    gap: 40%;
+  }
+  
+  .button_commencer_jeu {
+    margin-left: 45%;
+  }
+.seeeeeeeelect{
+    gap: 40%;
+}
+.error {
+
+    color: red;
+
+}
+
+.color_forDiff {
+
+    color: white;
+    font-family: "Poppins";
+
+}

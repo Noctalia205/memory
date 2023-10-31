@@ -1,6 +1,6 @@
 <footer>
     <div>
-        <h2 class="titre1">Information</h2>
+        <h2 class="titreFooter">Information</h2>
         <P class="tree">Si vous souhaitez plus d'informations.</P>
         <p class="one">Tel : <span>06 05 04 03 02</span><br /><br />
             Email : <span>support@powerofmemory.com</span><br /><br />
