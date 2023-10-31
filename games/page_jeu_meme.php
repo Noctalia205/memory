@@ -7,27 +7,7 @@ $page = 'Jeu';?>
 <body>
 <?php require_once SITE_ROOT . ('partials/header.php') ?>
     <h1 class="titre1">The Power Of Memory</h1>
-    <div class="flex-globaltittle">
-    <h2 class="titre-diff">Difficultés</h2>
-    <h2 class="titre-thèmes">Thèmes</h2>
-    </div>
-    <div class="bouttons_difth">
-    <form method="POST" action="traitement.php">
-        <div class="bouttons_dif">
-        <input class="bouton" type="submit" value="Easy">
-        <input class="bouton" type="submit" value="Medium">
-        <input class="bouton" type="submit" value="Difficile">
-        </div>
-    </form>
-        <div class="bouttons_th">
-            <form action="page_jeu_meme.php">
-        <input class="bouton" type="submit" value="Memes"></form>
-        <form action="page_jeu_dbz.php">
-        <input class="bouton" type="submit" value="DBZ"></form>
-        <form action="page_jeu_nourriture.php">
-        <input class="bouton" type="submit" value="Nourriture"></form>
-        </div>
-    </div><br><br><br>
+    
 
     <div class="tableau_carte1">
         <table class="Easy">

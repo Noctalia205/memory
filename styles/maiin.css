@@ -243,7 +243,12 @@ body {
     justify-content: center;
     padding-top: 6%;
 }
-
+.titreFooter {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-top: 6%;
+}
 .boutonEnvoyer {
     margin-left: 46%;
     margin-top: 5%;

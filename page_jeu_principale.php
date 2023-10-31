@@ -4,6 +4,7 @@ $page = 'Jeu'; ?>
 <!doctype html>
 <html lang="fr">
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
+<script src="script.js"></script>
 
 <body>
     <?php require_once SITE_ROOT . ('partials/header.php') ?>
@@ -15,30 +16,33 @@ $page = 'Jeu'; ?>
         <h2 class="titre2">Comment Jouer ?</h2>
         <p class="p2">Le jeu se compose de paires de cartes portant des illustrations identiques. L'ensemble des cartes est mélangé, puis étalé face contre table. À son tour, chaque joueur retourne deux cartes de son choix. S'il découvre deux cartes identiques, il les ramasse et les conserve, ce qui lui permet de rejouer. Si les cartes ne sont pas identiques, il les retourne faces cachées à leur emplacement de départ. Le jeu se termine quand toutes les paires de cartes ont été découvertes et ramassées. Le gagnant est le joueur qui possède le plus de paires.</p>
 </div>
-        <div class="flex-globaltittle">
-            <h2 class="titre-diff">Difficultés</h2>
-            <h2 class="titre-thèmes">Thèmes</h2>
+        
+
+
+
+
+
+
+
+<div id="fileSelect_diff">
+                <select id="select_diff" name="Difficultés">
+                    <option value="Easy">Easy </option>
+                    <option value="Medium"> Medium</option>
+                    <option value="Hard"> Hard</option>
+
+                </select>
         </div>
-        <div class="bouttons_difth">
-            <form method="POST" action="traitement.php">
-                <div class="bouttons_dif">
-                    <input class="bouton" type="submit" value="Easy">
-                    <input class="bouton" type="submit" value="Medium">
-                    <input class="bouton" type="submit" value="Hard">
-                </div>
-            </form>
-            <div class="bouttons_th">
-                <form action="page_jeu_meme.php">
-                    <input class="bouton" type="submit" value="Memes">
-                </form>
-                <form action="page_jeu_dbz.php">
-                    <input class="bouton" type="submit" value="DBZ">
-                </form>
-                <form action="page_jeu_nourriture.php">
-                    <input class="bouton" type="submit" value="Nourriture">
-                </form>
-            </div>
+
+<div id="fileSelect_themes">
+                <select id="select_themes" name="Themes">
+                    <option value= "Memes" »>Memes </option>
+                    <option value= "DBZ"> DBZ</option>
+                    <option value= "Nourriture"> Nourriture</option>
+
+                </select>
         </div>
+        <input class="button_commencer_jeu" type="button" value="Lancer le jeu">
+
 </body>
 <?php require_once SITE_ROOT . ('partials/footer.php') ?>
 

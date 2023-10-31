@@ -14,7 +14,7 @@
         <p class="copyright-color">Copyright © 2023 Tous droits réservés</p><br>
     </div>
     <div>
-        <h2 class="titre1">Power Of Memory</h2><br />
+        <h2 class="titreFooter">Power Of Memory</h2><br />
         <ul class="two">
             <li><a href="games/page_jeu_dbz.php" class="listefooter">Jouer !</a></li><br />
             <li><a href="games/page_de_score.php" class="listefooter">Les scores</a></li><br />
