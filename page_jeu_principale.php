@@ -4,7 +4,7 @@ $page = 'Jeu'; ?>
 <!doctype html>
 <html lang="fr">
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
-<script src="script.js"></script>
+
 
 <body>
     <?php require_once SITE_ROOT . ('partials/header.php') ?>
@@ -43,9 +43,9 @@ $page = 'Jeu'; ?>
 
                 </select>
         </div>
-        <input class="button_commencer_jeu" type="button" value="Lancer le jeu">
+        <input class="button_commencer_jeu" id="button_commencer_jeu" onclick="afficherTexte()" type="button" value="Lancer le jeu">
 
 </body>
 <?php require_once SITE_ROOT . ('partials/footer.php') ?>
-
+<script src="script.js"></script>
 </html>
