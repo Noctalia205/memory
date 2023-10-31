@@ -45,8 +45,9 @@ body {
     display: inline-block;
     height: 30px;
     width: 30%;
-    
+
 }
+
 .erreurMailnonCorrect {
 
     margin-left: 37%;
@@ -81,7 +82,7 @@ body {
 
 .passwordCorrect {
 
-    color: red  ;
+    color: red;
     margin-left: 37%;
     margin-top: -1%;
     margin-bottom: 1%;
@@ -90,11 +91,11 @@ body {
 .Inscreussi {
 
     color: rgb(9, 203, 9);
-  margin-top: -1%;
-  margin-bottom: 1%;
-  display: flex;
-  justify-content: center;
-  font-size: 200%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
 
 }
 
@@ -106,6 +107,7 @@ body {
     margin-bottom: 1%;
 
 }
+
 .case1 {
 
     background-color: rgba(39, 38, 69, 255);
@@ -114,6 +116,7 @@ body {
     width: 25%;
     height: 55px;
 }
+
 .textarea {
 
     display: block;
@@ -192,7 +195,7 @@ body {
 
     margin-left: 37%;
     margin-top: -1%;
-    margin-bottom: 1%;    
+    margin-bottom: 1%;
 
 }
 
@@ -206,7 +209,7 @@ body {
 
 .passwordCorrect {
 
-    color: red  ;
+    color: red;
     margin-left: 37%;
     margin-top: -1%;
     margin-bottom: 1%;
@@ -225,11 +228,11 @@ body {
 .Inscreussi {
 
     color: rgb(9, 203, 9);
-  margin-top: -1%;
-  margin-bottom: 1%;
-  display: flex;
-  justify-content: center;
-  font-size: 200%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
 
 }
 
@@ -242,6 +245,8 @@ body {
     color: white;
     justify-content: center;
     padding-top: 6%;
+    font-family: "Oswald";
+    font-size: 7em;
 }
 .titreFooter {
     display: flex;
@@ -422,11 +427,16 @@ td {
     justify-content: center;
     text-align: center;
     font-family: "Poppins";
-    
+
+}
+.regles img {
+    width: 30%;
+    margin-bottom: 30px;
 }
 .titre2 {
     color: orange;
 }
+
 .p2 {
     color: white;
 }
@@ -1071,13 +1081,13 @@ body {
     height: 40px;
     border-radius: 32px;
     background-color: white;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
- 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
 }
 
 
-    
+
 
 
 /* PAGE D'ACCUEIL*/
@@ -1160,7 +1170,8 @@ body {
     width: 100%;
 
 }
-input .barre_recherche{
+
+input .barre_recherche {
     border-radius: 100%;
 }
 
@@ -1173,10 +1184,11 @@ input .barre_recherche{
     height: 40px;
     border-radius: 32px;
     background-color: white;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
- 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
 }
+
 .table_score_container {
     box-sizing: border-box;
     font-family: "Poppins";
@@ -1300,6 +1312,7 @@ BODY*/
 
 
 }
+
 .title-top {
     color: #ffffff;
     border: var(--main-border-color);

@@ -11,6 +11,8 @@ $page = 'Jeu'; ?>
 
     <h1 class="titre1">The Power Of Memory</h1>
     <div class="regles">
+        <img src="assets/memory.jpg" alt="le memory">
+
     <h2 class="titre2">C'est quoi le memory ?</h2>
         <p class="p2">Le jeu du memory est le jeu de société idéal pour réunir les petits et les plus grands ! Ce jeu universel se présente avec des règles simples qui se transmettent de génération en génération.</p>
         <h2 class="titre2">Comment Jouer ?</h2>
