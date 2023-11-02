@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Tableau</title>
+</header>
+
+<body>
+    <h1>ON FAIT LES TABLEAUX</h1>
+    <div id="TABLEAU1"></div>
+
+
+    <p id="para">MATHIEUUUUUUUUUU AIME DE TOUT SON BÉBOU ROMUUUUUUUUALDEUH</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+
+
+    <div id="time_button" <time>00:00:00</time></div>
+    <div class="button-timer-contener">
+    <button id="strt">start</button>
+    </div>
+
+</body>
+<script>
+
+    /*GET ELEMENT BY ID*/
+
+    function changeColor(newColor) {
+        var element = document.getElementById('para')
+        element.style.color = newColor;
+
+    }
+
+    var time_button = document.getElementById('time_button');
+    var start = document.getElementById('strt');
+    var stop = document.getElementById('stp');
+
+    var sec = 0;
+    var min = 0;
+    var hrs = 0;
+    var t;
+
+    function tick() {
+        sec++;
+        if (sec >= 60) {
+            sec = 0;
+            min++;
+            if (min >= 60) {
+                min = 0;
+                hrs++;
+            }
+        }
+    }
+    function add() {
+        tick();
+        time_button.textContent = (hrs > 9 ? hrs : '0' + hrs) + ':' +
+            (min > 9 ? min : '0' + min) + ':' + (sec > 9 ? sec : '0' + sec);
+        timer();
+    }
+    function timer() {
+        t = setTimeout(add, 1000);
+    }
+
+    start.onclick = timer;
+    stop.onclick = function () {
+        clearTimeout(t);
+    }
+
+</script>
+
+<style>
+    #para {
+        font-size: 3rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #time_button {
+        margin-top: 150px;
+        font-size: 7rem;
+        display: flex;
+        justify-content: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color:orange;
+        color: white;
+       
+    }
+
+    .button-timer-contener {
+        display: flex;
+        justify-content: center;
+    }
+
+    #strt {}
+
+    #stp {}
+</style>
+
+</html>
