@@ -10,8 +10,8 @@ $page = 'Jeu';?>
     <h1 class="titre1">The Power Of Memory</h1>
     
 
-    <div class="tableau_carte1_DBZ">
-    <table class="Easy">
+    <div class="tableau_carte1_DBZ" id="Tab_EasyDBZ">
+    <!-- <table class="Easy" id="Tab_EasyDBZ">
         <tr>
             <td class="carte"><img src="../assets/DBZ/DBZ1-removebg-preview.png"></td>
             <td class="carte"><img src="../assets/DBZ/DBZ2-removebg-preview.png"></td>
@@ -40,9 +40,10 @@ $page = 'Jeu';?>
             <td class="carte"><img src="../assets/DBZ/DBZ6-removebg-preview.png"></td>
             <td class="carte"><img src="../assets/DBZ/DBZ3-removebg-preview.png"></td>
         </tr>
-    </table></div><br><br><br>
+    </table> -->
+</div><br><br><br>
     <div class="tableau_carte2_DBZ">
-    <table class="Medium">
+    <table class="Medium" id="Tab_MediumDBZ">
         <tr>
             <td class="carte"><img src="../assets/DBZ/DBZ1-removebg-preview.png"></td>
             <td class="carte"><img src="../assets/DBZ/DBZ2-removebg-preview.png"></td>
@@ -122,9 +123,11 @@ $page = 'Jeu';?>
             <td class="carte"><img src="../assets/DBZ/DBZ21-removebg-preview.png"></td>
             <td class="carte"><img src="../assets/DBZ/DBZ18-removebg-preview.png"></td>
             <td class="carte"><img src="../assets/DBZ/DBZ24-removebg-preview.png"></td>
-    </table></div><br><br><br>
+    </table>
+</div>
+<br><br><br>
     <div class="tableau_carte3_DBZ">
-        <table class="Difficile">
+        <table class="Difficile" id="Tab_HardDBZ">
             <tr>
                 <td class="carte"><img src="../assets/DBZ/DBZ1-removebg-preview.png"></td>
                 <td class="carte"><img src="../assets/DBZ/DBZ2-removebg-preview.png"></td>

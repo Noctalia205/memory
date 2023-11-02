@@ -4,7 +4,7 @@ $page = 'Jeu'; ?>
 <!doctype html>
 <html lang="fr">
 <?php require_once SITE_ROOT . ('partials/head.php') ?>
-<script src="script.js"></script>
+
 
 <body>
     <?php require_once SITE_ROOT . ('partials/header.php') ?>
@@ -23,29 +23,54 @@ $page = 'Jeu'; ?>
 
 
 
+<div class="blocks_selectThemeDiff">
+
+<label for="difficultées" class="color_forDiff">
+    Choisir une difficultée
+        <div id="fileSelect_diff">
+                    <select id="select_diff" name="Difficultés">
+                        <option value=""> </option>
+                        <option value="Easy">Easy </option>
+                        <option value="Medium"> Medium</option>
+                        <option value="Hard"> Hard</option>
+                    </select>
+        </div>
+</label>
+
+<label for="difficultées" class="color_forDiff">
+    Choisir    un     Thème
+        <div id="fileSelect_themes">
+                    <select id="select_themes" name="Themes">
+                        <option value=""> </option>
+                        <option value= "Memes">Memes </option>
+                        <option value= "DBZ"> DBZ</option>
+                        <option value= "Nourriture"> Nourriture</option>
+
+                    </select>
+        </div>
+</label>
 
 
+</div>
 
-<div id="fileSelect_diff">
-                <select id="select_diff" name="Difficultés">
-                    <option value="Easy">Easy </option>
-                    <option value="Medium"> Medium</option>
-                    <option value="Hard"> Hard</option>
+<div id="time_button"<time>00:00:00</time></div>
+<button id="strt">start</button>
+<button id="stp">stop</button>
+<button id="rst">reset</button>
+        
+        <input class="button_commencer_jeu" type="button" id="button_commencer_jeu" value="Lancer le jeu" onclick="addTableEasy();">
 
-                </select>
+        <div class="tableau_carte1_DBZ" id="Tab_EasyDBZ">
         </div>
 
-<div id="fileSelect_themes">
-                <select id="select_themes" name="Themes">
-                    <option value= "Memes" »>Memes </option>
-                    <option value= "DBZ"> DBZ</option>
-                    <option value= "Nourriture"> Nourriture</option>
-
-                </select>
+        <div class="tableau_carte2_DBZ" id="Tab_MediumDBZ">
         </div>
-        <input class="button_commencer_jeu" type="button" value="Lancer le jeu">
+
+        <div class="tableau_carte3_DBZ" id="Tab_HardDBZ">
+        </div>
 
 </body>
 <?php require_once SITE_ROOT . ('partials/footer.php') ?>
 
 </html>
+<script src="script.js"></script>   

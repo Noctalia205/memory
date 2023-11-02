@@ -10,7 +10,7 @@ $page = 'Jeu';?>
     
 
     <div class="tableau_carte1_FOOD">
-    <table class="Easy">
+    <table class="Easy" id="Tab_EasyFOOD">
         <tr>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N2.png"></td>
@@ -41,7 +41,7 @@ $page = 'Jeu';?>
         </tr>
     </table></div><br><br><br>
     <div class="tableau_carte2_FOOD">
-    <table class="Medium">
+    <table class="Medium" id="Tab_MediumFOOD">
         <tr>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N2.png"></td>
@@ -123,7 +123,7 @@ $page = 'Jeu';?>
             <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
     </table></div><br><br><br>
     <div class="tableau_carte3_FOOD">
-        <table class="Difficile">
+        <table class="Difficile" id="Tab_HardFOOD">
             <tr>
                 <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N1.png"></td>
                 <td class="carte"><img src="<?php echo PROJECT_FOLDER?>assets/nourriture/N2.png"></td>
