@@ -53,14 +53,23 @@ $page = 'Jeu'; ?>
 
     </div>
 
-    <div id="time_button" <time>00:00:00</time></div>
-    <div class="button-timer-contener">
-        <button id="strt">start</button>
+<div id="time_button"<time>00:00:00</time></div>
+<button id="strt">start</button>
+<button id="stp">stop</button>
+<button id="rst">reset</button>
+<!--         
+<div id="card_contener">
+        <div class="card-main">
+            <div class="side side--front">
 
 
-    </div>
+            </div>
+            <div class="side side--back">
+            
+            </div>
+        </div> -->
 
-    <input class="button_commencer_jeu" type="button" id="button_commencer_jeu" value="Lancer le jeu" onclick="addTableEasy();">
+        <input class="button_commencer_jeu" type="button" id="button_commencer_jeu" value="Lancer le jeu" onclick="addTable(4);">
 
     <div class="tableau_carte1_DBZ" id="Tab_EasyDBZ">
     </div>
@@ -74,5 +83,5 @@ $page = 'Jeu'; ?>
 </body>
 <?php require_once SITE_ROOT . ('partials/footer.php') ?>
 
+<script src="script.js"></script>   
 </html>
-<script src="script.js"></script>

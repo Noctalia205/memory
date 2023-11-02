@@ -1,31 +1,31 @@
+document.getElementById("button_commencer_jeu")
+  .addEventListener("click", function () {
+    let elements = document.getElementsByClassName("error");
+    while (elements.length > 0) elements[0].remove();
 
-document.getElementById('button_commencer_jeu').addEventListener('click', function () {
+    let select = document.getElementById("select_diff");
+    let select2 = document.getElementById("select_themes");
 
-        let elements = document.getElementsByClassName("error");
-        while (elements.length > 0) elements[0].remove();
+    if (select.value == "") {
+      var selectDiv = document.getElementById("fileSelect_diff");
+      fileSelect_diff.insertAdjacentHTML(
+        "beforeend",
+        '<p class="error"> Aucune difficultée selectionné ! </p>'
+      );
+    }
 
-        let select = document.getElementById('select_diff')
-        let select2 = document.getElementById('select_themes')
+    if (select2.value == "") {
+      var selectDiv = document.getElementById("fileSelect_themes");
+      fileSelect_themes.insertAdjacentHTML(
+        "beforeend",
+        '<p class="error"> Aucun thèmes selectionné !</p>'
+      );
+    }
+  });
 
-
-        if (select.value == '') {
-                var selectDiv = document.getElementById('fileSelect_diff');
-                fileSelect_diff.insertAdjacentHTML('beforeend',
-                        '<p class="error"> Aucune difficultée selectionné ! </p>')
-        }
-
-
-        if (select2.value == '') {
-                var selectDiv = document.getElementById('fileSelect_themes');
-                fileSelect_themes.insertAdjacentHTML('beforeend',
-                        '<p class="error"> Aucun thèmes selectionné !</p>')
-        }
-
-})
-
-var time_button = document.getElementById('time_button');
-var start = document.getElementById('strt');
-var stop = document.getElementById('stp');
+var time_button = document.getElementById("time_button");
+var start = document.getElementById("strt");
+var stop = document.getElementById("stp");
 
 var sec = 0;
 var min = 0;
@@ -33,130 +33,159 @@ var hrs = 0;
 var t;
 
 function tick() {
-        sec++;
-        if (sec >= 60) {
-                sec = 0;
-                min++;
-                if (min >= 60) {
-                        min = 0;
-                        hrs++;
-                }
-        }
+  sec++;
+  if (sec >= 60) {
+    sec = 0;
+    min++;
+    if (min >= 60) {
+      min = 0;
+      hrs++;
+    }
+  }
 }
 function add() {
-        tick();
-        time_button.textContent = (hrs > 9 ? hrs : '0' + hrs) + ':' +
-                (min > 9 ? min : '0' + min) + ':' + (sec > 9 ? sec : '0' + sec);
-        timer();
+  tick();
+  time_button.textContent =
+    (hrs > 9 ? hrs : "0" + hrs) +
+    ":" +
+    (min > 9 ? min : "0" + min) +
+    ":" +
+    (sec > 9 ? sec : "0" + sec);
+  timer();
 }
 function timer() {
-        t = setTimeout(add, 1000);
+  t = setTimeout(add, 1000);
 }
 
 start.onclick = timer;
 stop.onclick = function () {
-        clearTimeout(t);
+  clearTimeout(t);
+};
+
+
+// document.getElementById("button_commencer_jeu").addEventListener("click", function () {
+    
+//     let elements = document.getElementById("Tab_EasyDBZ");
+//     while (elements.length > 0) elements[0].remove();
+
+
+var selectionDifficulte = document.getElementById('select_diff')
+selectionDifficulte.addEventListener("change", function() {
+  
+  console.log(selectionDifficulte.value)
+  
+});
+
+var selectionTheme = document.getElementById('select_themes')
+selectionTheme.addEventListener("change", function()  {
+
+  console.log(selectionTheme)
 }
-
-
-document.getElementById('button_commencer_jeu').addEventListener('click', function () {
-
-        let elements = document.getElementsByClassName("tableau_carte1_DBZ");
-        while (elements.length > 0) elements[0].remove();
+)
 
 
 
-        function addTableEasy() {
 
 
 
-                var classimg = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 8];
-                shuffle(classimg);
+var cards = document.querySelectorAll('.card');
 
-                var myTableDiv = document.getElementById("Tab_EasyDBZ");
-                var table = document.createElement('table');
-                console.log(table)
-                var tableBody = document.createElement('tbody');
-                table.appendChild(tableBody);
-
-                for (var i = 0; i < 4; i++) {
-                        var tr = document.createElement('tr');
-                        tableBody.appendChild(tr);
-
-                        for (var j = 0; j < 4; j++) {
-                                var td = document.createElement('td');
-                                td.innerHTML = '  <img src="assets/DBZ_T1/DBZ_8.png" onclick="getClass(' + classimg[0] + ')" class="' + classimg[0] + '" />';
-                                classimg.shift();
-                                tr.appendChild(td);
-                        }
-                }
-                myTableDiv.appendChild(table);
-        }
-        addTableEasy();
-
-        function Tab_MediumDBZ() {
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
 
 
 
-                var classimg = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 8];
-                shuffle(classimg);
-
-                var myTableDiv = document.getElementById("Tab_EasyDBZ");
-                var table = document.createElement('table');
-                console.log(table)
-                var tableBody = document.createElement('tbody');
-                table.appendChild(tableBody);
-
-                for (var i = 0; i < 6; i++) {
-                        var tr = document.createElement('tr');
-                        tableBody.appendChild(tr);
-
-                        for (var j = 0; j < 6; j++) {
-                                var td = document.createElement('td');
-                                td.innerHTML = '  <img src="assets/DBZ_T1/DBZ_8.png" onclick="getClass(' + classimg[0] + ')" class="' + classimg[0] + '" />';
-                                classimg.shift();
-                                tr.appendChild(td);
-                        }
-                }
-                myTableDiv.appendChild(table);
-        }
-        Tab_MediumDBZ();
-
-        
-
-        function getClass(classImage) {
-                alert(classImage);
-        }
 
 
-        function randomize(table) {
-                let i, j, tmp;
-                for (i = tab.length - 1; i > 0; i--) {
-                        j = Math.floor(Math.random() * (i + 1));
-                        tmp = table[i];
-                        table[i] = table[j];
-                        table[j] = tmp;
-                }
-                return table;
-        }
-
-        function shuffle(array) {
-                let currentIndex = array.length, randomIndex;
 
 
-                while (currentIndex > 0) {
 
 
-                        randomIndex = Math.floor(Math.random() * currentIndex);
-                        currentIndex--;
+
+function addTable(size) {
+
+    var images = [ 1,2];
+    console.log(images)
+    // shuffle(images);
+    var myTableDiv = document.getElementById("Tab_EasyDBZ");
+    var table = document.createElement('table');
+    console.log(table);
+    var tableBody = document.createElement('tbody');
+    table.appendChild(tableBody);
+
+    for (var i = 0; i < size; i++) {
+      var tr = document.createElement('tr');
+      tableBody.appendChild(tr);
+
+    for (var j = 0; j < size; j++) {
+      var td = document.createElement('td')
+      var image = document.createElement('img') 
+      image.src = "assets/DBZ_T1/DBZ-8.png" 
+      td.appendChild(image)
+      
+
+      // images.shift();
+      tr.appendChild(td);
+    }
+  }
+      myTableDiv.appendChild(table);
+    }
+  //     addTable();
+
+  // });
 
 
-                        [array[currentIndex], array[randomIndex]] = [
-                                array[randomIndex], array[currentIndex]];
-                }
+  function verifiedTable() {
 
-                return array;
-        }
 
-})
 
+  }
+
+//         for (var i = 0; i < 4; i++) {
+//           var tr = document.createElement('TR');
+//           tableBody.appendChild(tr);
+
+//           for (var j = 0; j < 4; j++) {
+//             var td = document.createElement('TD');
+//             td.width = '75';
+//             td.innerHTML ='  <img src="assets/DBZ_T1/DBZ_8.png" onclick="getClass('+classimg[0]+')" class="'+classimg[0]+'" />';
+
+//             classimg.shift();
+//             tr.appendChild(td);
+//           }
+//         }
+//         myTableDiv.appendChild(table);
+//       }
+//       addTable();
+
+//       function getClass(classImage){
+//         alert(classImage);
+//       }
+
+//       function randomize(table) {
+//         let i, j, tmp;
+//         for (i = tab.length - 1; i > 0; i--) {
+//             j = Math.floor(Math.random() * (i + 1));
+//             tmp = table[i];
+//             table[i] = table[j];
+//             table[j] = tmp;
+//         }
+//         return table;
+//     }
+
+//     function shuffle(array) {
+//         let currentIndex = array.length,  randomIndex;
+
+//         while (currentIndex > 0) {
+
+//           randomIndex = Math.floor(Math.random() * currentIndex);
+//           currentIndex--;
+
+//           [array[currentIndex], array[randomIndex]] = [
+//             array[randomIndex], array[currentIndex]];
+//         }
+
+//         return array;
