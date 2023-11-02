@@ -10,7 +10,7 @@ $page = 'Jeu';?>
     
 
     <div class="tableau_carte1_MEME">
-        <table class="Easy">
+        <table class="Easy" id="Tab_EasyMEME">
             <tr>
                 <td class="carte"><img src="assets//meme-1.jpg"></td>
                 <td class="carte"><img src="/meme-3.jpg"></td>
@@ -41,7 +41,7 @@ $page = 'Jeu';?>
             </tr>
         </table></div><br><br><br>
         <div class="tableau_carte2_MEME">
-        <table class="Medium">
+        <table class="Medium" id="Tab_MediumMEME">
             <tr>
                 <td class="carte"><img src="img//meme-1.jpg"></td>
                 <td class="carte"><img src="img//meme-2.jpg"></td>
@@ -123,7 +123,7 @@ $page = 'Jeu';?>
                 <td class="carte"><img src="img//meme-24.jpg"></td>
         </table></div><br><br><br>
         <div class="tableau_carte3_MEME">
-            <table class="Difficile">
+            <table class="Difficile" id="Tab_HardMEME">
                 
                 <tr>
                     <td class="carte"><img src="img//meme-1.jpg"></td>

@@ -1,75 +1,97 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <title>FLIP CARD</title>
-</head>
+<html>
+<header>
+    <title>Tableau</title>
+</header>
 
 <body>
-    <div class="card_contener">
-        <div class="card-main">
-            <div class="side side--front">
-               
-
-            </div>
-            <div class="side side--back">
-                <img src="assets/Fiafei.jpg">
-            </div>
-        </div>
-
-        <style>
-            .card_contener {
-                width: 250px;
-                height: 320px;
-                position: relative;
-                margin: 0 auto;
+    <h1>ON FAIT LES TABLEAUX</h1>
+    <div id="TABLEAU1"></div>
 
 
-            }
-
-            .card-main:hover{
-                transform: rotateY(180deg);
-            }
-
-            .card-main {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                border: black;
-                transition: transform 500ms ease-in-out;
-                transform-style: preserve-3d;
-            }
-
-            .side {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                backface-visibility: hidden;
-            }
-
-            .side--front {
-                background-image: url(assets/black-card-meme.jpg);
-                z-index: 1;
-            }
-            .side--front img{
-                width: 250px;
-                height: 320px;
-        
-            }
-
-            .side--back {
-                transform: rotateY(180deg);
-            }
-            .side--back img{
-                width: 250px;
-                height: 320px;
-            }
-        </style>
+    <p id="para">MATHIEUUUUUUUUUU AIME DE TOUT SON BÉBOU ROMUUUUUUUUALDEUH</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
 
 
+    <div id="time_button" <time>00:00:00</time></div>
+    <div class="button-timer-contener">
+    <button id="strt">start</button>
     </div>
-    </div>
+
 </body>
+<script>
+
+    /*GET ELEMENT BY ID*/
+
+    function changeColor(newColor) {
+        var element = document.getElementById('para')
+        element.style.color = newColor;
+
+    }
+
+    var time_button = document.getElementById('time_button');
+    var start = document.getElementById('strt');
+    var stop = document.getElementById('stp');
+
+    var sec = 0;
+    var min = 0;
+    var hrs = 0;
+    var t;
+
+    function tick() {
+        sec++;
+        if (sec >= 60) {
+            sec = 0;
+            min++;
+            if (min >= 60) {
+                min = 0;
+                hrs++;
+            }
+        }
+    }
+    function add() {
+        tick();
+        time_button.textContent = (hrs > 9 ? hrs : '0' + hrs) + ':' +
+            (min > 9 ? min : '0' + min) + ':' + (sec > 9 ? sec : '0' + sec);
+        timer();
+    }
+    function timer() {
+        t = setTimeout(add, 1000);
+    }
+
+    start.onclick = timer;
+    stop.onclick = function () {
+        clearTimeout(t);
+    }
+
+</script>
+
+<style>
+    #para {
+        font-size: 3rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #time_button {
+        margin-top: 150px;
+        font-size: 7rem;
+        display: flex;
+        justify-content: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color:orange;
+        color: white;
+       
+    }
+
+    .button-timer-contener {
+        display: flex;
+        justify-content: center;
+    }
+
+    #strt {}
+
+    #stp {}
+</style>
 
 </html>
