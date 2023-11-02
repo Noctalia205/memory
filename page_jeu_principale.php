@@ -77,9 +77,9 @@ $page = 'Jeu'; ?>
     <div class="tableau_carte2_DBZ" id="Tab_MediumDBZ">
     </div>
 
-    <div class="tableau_carte3_DBZ" id="Tab_HardDBZ">
-    </div>
-
+        <div class="tableau_carte3_DBZ" id="Tab_HardDBZ">
+        </div>
+    
 </body>
 <?php require_once SITE_ROOT . ('partials/footer.php') ?>
 
