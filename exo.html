@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FLIP CARD</title>
+</head>
+
+<body>
+    <div class="card_contener">
+        <div class="card-main">
+            <div class="side side--front">
+               
+
+            </div>
+            <div class="side side--back">
+                <img src="assets/Fiafei.jpg">
+            </div>
+        </div>
+
+        <style>
+            .card_contener {
+                width: 250px;
+                height: 320px;
+                position: relative;
+                margin: 0 auto;
+
+
+            }
+
+            .card-main:hover{
+                transform: rotateY(180deg);
+            }
+
+            .card-main {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border: black;
+                transition: transform 500ms ease-in-out;
+                transform-style: preserve-3d;
+            }
+
+            .side {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                backface-visibility: hidden;
+            }
+
+            .side--front {
+                background-image: url(assets/black-card-meme.jpg);
+                z-index: 1;
+            }
+            .side--front img{
+                width: 250px;
+                height: 320px;
+        
+            }
+
+            .side--back {
+                transform: rotateY(180deg);
+            }
+            .side--back img{
+                width: 250px;
+                height: 320px;
+            }
+        </style>
+
+
+    </div>
+    </div>
+</body>
+
+</html>

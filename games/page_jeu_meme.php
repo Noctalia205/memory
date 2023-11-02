@@ -12,286 +12,286 @@ $page = 'Jeu';?>
     <div class="tableau_carte1_MEME">
         <table class="Easy">
             <tr>
-                <td class="carte"><img src="img/Meme/meme-1.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-3.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-4.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-5.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-6.jpg"></td>
+                <td class="carte"><img src="assets//meme-1.jpg"></td>
+                <td class="carte"><img src="/meme-3.jpg"></td>
+                <td class="carte"><img src="/meme-4.jpg"></td>
+                <td class="carte"><img src="/meme-5.jpg"></td>
+                <td class="carte"><img src="/meme-6.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-3.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-6.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-7.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-8.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-1.jpg"></td>
+                <td class="carte"><img src="img//meme-3.jpg"></td>
+                <td class="carte"><img src="img//meme-6.jpg"></td>
+                <td class="carte"><img src="img//meme-7.jpg"></td>
+                <td class="carte"><img src="img//meme-8.jpg"></td>
+                <td class="carte"><img src="img//meme-1.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-2.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-7.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-8.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-4.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-9.jpg"></td>
+                <td class="carte"><img src="img//meme-2.jpg"></td>
+                <td class="carte"><img src="img//meme-7.jpg"></td>
+                <td class="carte"><img src="img//meme-8.jpg"></td>
+                <td class="carte"><img src="img//meme-4.jpg"></td>
+                <td class="carte"><img src="img//meme-9.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-10.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-10.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-9.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-5.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-2.jpg"></td>
+                <td class="carte"><img src="img//meme-10.jpg"></td>
+                <td class="carte"><img src="img//meme-10.jpg"></td>
+                <td class="carte"><img src="img//meme-9.jpg"></td>
+                <td class="carte"><img src="img//meme-5.jpg"></td>
+                <td class="carte"><img src="img//meme-2.jpg"></td>
             </tr>
         </table></div><br><br><br>
         <div class="tableau_carte2_MEME">
         <table class="Medium">
             <tr>
-                <td class="carte"><img src="img/Meme/meme-1.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-2.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-3.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-4.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-5.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-6.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-7.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-8.jpg"></td>
+                <td class="carte"><img src="img//meme-1.jpg"></td>
+                <td class="carte"><img src="img//meme-2.jpg"></td>
+                <td class="carte"><img src="img//meme-3.jpg"></td>
+                <td class="carte"><img src="img//meme-4.jpg"></td>
+                <td class="carte"><img src="img//meme-5.jpg"></td>
+                <td class="carte"><img src="img//meme-6.jpg"></td>
+                <td class="carte"><img src="img//meme-7.jpg"></td>
+                <td class="carte"><img src="img//meme-8.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-9.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-10.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-11.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-12.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-13.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-14.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-15.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-16.jpg"></td>
+                <td class="carte"><img src="img//meme-9.jpg"></td>
+                <td class="carte"><img src="img//meme-10.jpg"></td>
+                <td class="carte"><img src="img//meme-11.jpg"></td>
+                <td class="carte"><img src="img//meme-12.jpg"></td>
+                <td class="carte"><img src="img//meme-13.jpg"></td>
+                <td class="carte"><img src="img//meme-14.jpg"></td>
+                <td class="carte"><img src="img//meme-15.jpg"></td>
+                <td class="carte"><img src="img//meme-16.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-17.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-18.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-19.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-20.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-21.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-22.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-23.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                <td class="carte"><img src="img//meme-17.jpg"></td>
+                <td class="carte"><img src="img//meme-18.jpg"></td>
+                <td class="carte"><img src="img//meme-19.jpg"></td>
+                <td class="carte"><img src="img//meme-20.jpg"></td>
+                <td class="carte"><img src="img//meme-21.jpg"></td>
+                <td class="carte"><img src="img//meme-22.jpg"></td>
+                <td class="carte"><img src="img//meme-23.jpg"></td>
+                <td class="carte"><img src="img//meme-24.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-25.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-26.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-27.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-28.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-29.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-30.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-31.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-32.jpg"></td>
+                <td class="carte"><img src="img//meme-25.jpg"></td>
+                <td class="carte"><img src="img//meme-26.jpg"></td>
+                <td class="carte"><img src="img//meme-27.jpg"></td>
+                <td class="carte"><img src="img//meme-28.jpg"></td>
+                <td class="carte"><img src="img//meme-29.jpg"></td>
+                <td class="carte"><img src="img//meme-30.jpg"></td>
+                <td class="carte"><img src="img//meme-31.jpg"></td>
+                <td class="carte"><img src="img//meme-32.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-25.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-26.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-27.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-28.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-29.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-30.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-31.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-32.jpg"></td>
+                <td class="carte"><img src="img//meme-25.jpg"></td>
+                <td class="carte"><img src="img//meme-26.jpg"></td>
+                <td class="carte"><img src="img//meme-27.jpg"></td>
+                <td class="carte"><img src="img//meme-28.jpg"></td>
+                <td class="carte"><img src="img//meme-29.jpg"></td>
+                <td class="carte"><img src="img//meme-30.jpg"></td>
+                <td class="carte"><img src="img//meme-31.jpg"></td>
+                <td class="carte"><img src="img//meme-32.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-1.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-2.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-3.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-4.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-5.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-6.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-7.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-8.jpg"></td>
+                <td class="carte"><img src="img//meme-1.jpg"></td>
+                <td class="carte"><img src="img//meme-2.jpg"></td>
+                <td class="carte"><img src="img//meme-3.jpg"></td>
+                <td class="carte"><img src="img//meme-4.jpg"></td>
+                <td class="carte"><img src="img//meme-5.jpg"></td>
+                <td class="carte"><img src="img//meme-6.jpg"></td>
+                <td class="carte"><img src="img//meme-7.jpg"></td>
+                <td class="carte"><img src="img//meme-8.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-9.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-10.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-11.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-12.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-13.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-14.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-15.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-16.jpg"></td>
+                <td class="carte"><img src="img//meme-9.jpg"></td>
+                <td class="carte"><img src="img//meme-10.jpg"></td>
+                <td class="carte"><img src="img//meme-11.jpg"></td>
+                <td class="carte"><img src="img//meme-12.jpg"></td>
+                <td class="carte"><img src="img//meme-13.jpg"></td>
+                <td class="carte"><img src="img//meme-14.jpg"></td>
+                <td class="carte"><img src="img//meme-15.jpg"></td>
+                <td class="carte"><img src="img//meme-16.jpg"></td>
             </tr>
             <tr>
-                <td class="carte"><img src="img/Meme/meme-17.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-18.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-19.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-20.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-21.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-22.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-23.jpg"></td>
-                <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                <td class="carte"><img src="img//meme-17.jpg"></td>
+                <td class="carte"><img src="img//meme-18.jpg"></td>
+                <td class="carte"><img src="img//meme-19.jpg"></td>
+                <td class="carte"><img src="img//meme-20.jpg"></td>
+                <td class="carte"><img src="img//meme-21.jpg"></td>
+                <td class="carte"><img src="img//meme-22.jpg"></td>
+                <td class="carte"><img src="img//meme-23.jpg"></td>
+                <td class="carte"><img src="img//meme-24.jpg"></td>
         </table></div><br><br><br>
         <div class="tableau_carte3_MEME">
             <table class="Difficile">
                 
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-1.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-2.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-3.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-4.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-5.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-6.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-7.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-8.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-9.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-10.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-11.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-12.jpg"></td>
+                    <td class="carte"><img src="img//meme-1.jpg"></td>
+                    <td class="carte"><img src="img//meme-2.jpg"></td>
+                    <td class="carte"><img src="img//meme-3.jpg"></td>
+                    <td class="carte"><img src="img//meme-4.jpg"></td>
+                    <td class="carte"><img src="img//meme-5.jpg"></td>
+                    <td class="carte"><img src="img//meme-6.jpg"></td>
+                    <td class="carte"><img src="img//meme-7.jpg"></td>
+                    <td class="carte"><img src="img//meme-8.jpg"></td>
+                    <td class="carte"><img src="img//meme-9.jpg"></td>
+                    <td class="carte"><img src="img//meme-10.jpg"></td>
+                    <td class="carte"><img src="img//meme-11.jpg"></td>
+                    <td class="carte"><img src="img//meme-12.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-13.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-14.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-15.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-16.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-17.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-18.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-19.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-20.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-21.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-22.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-23.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-13.jpg"></td>
+                    <td class="carte"><img src="img//meme-14.jpg"></td>
+                    <td class="carte"><img src="img//meme-15.jpg"></td>
+                    <td class="carte"><img src="img//meme-16.jpg"></td>
+                    <td class="carte"><img src="img//meme-17.jpg"></td>
+                    <td class="carte"><img src="img//meme-18.jpg"></td>
+                    <td class="carte"><img src="img//meme-19.jpg"></td>
+                    <td class="carte"><img src="img//meme-20.jpg"></td>
+                    <td class="carte"><img src="img//meme-21.jpg"></td>
+                    <td class="carte"><img src="img//meme-22.jpg"></td>
+                    <td class="carte"><img src="img//meme-23.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-25.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-26.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-27.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-28.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-29.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-30.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-31.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-32.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-33.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-34.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-35.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-36.jpg"></td>
+                    <td class="carte"><img src="img//meme-25.jpg"></td>
+                    <td class="carte"><img src="img//meme-26.jpg"></td>
+                    <td class="carte"><img src="img//meme-27.jpg"></td>
+                    <td class="carte"><img src="img//meme-28.jpg"></td>
+                    <td class="carte"><img src="img//meme-29.jpg"></td>
+                    <td class="carte"><img src="img//meme-30.jpg"></td>
+                    <td class="carte"><img src="img//meme-31.jpg"></td>
+                    <td class="carte"><img src="img//meme-32.jpg"></td>
+                    <td class="carte"><img src="img//meme-33.jpg"></td>
+                    <td class="carte"><img src="img//meme-34.jpg"></td>
+                    <td class="carte"><img src="img//meme-35.jpg"></td>
+                    <td class="carte"><img src="img//meme-36.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-37.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-38.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-39.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-40.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-41.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-42.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-43.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-44.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-45.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-46.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-47.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-48.jpg"></td>
+                    <td class="carte"><img src="img//meme-37.jpg"></td>
+                    <td class="carte"><img src="img//meme-38.jpg"></td>
+                    <td class="carte"><img src="img//meme-39.jpg"></td>
+                    <td class="carte"><img src="img//meme-40.jpg"></td>
+                    <td class="carte"><img src="img//meme-41.jpg"></td>
+                    <td class="carte"><img src="img//meme-42.jpg"></td>
+                    <td class="carte"><img src="img//meme-43.jpg"></td>
+                    <td class="carte"><img src="img//meme-44.jpg"></td>
+                    <td class="carte"><img src="img//meme-45.jpg"></td>
+                    <td class="carte"><img src="img//meme-46.jpg"></td>
+                    <td class="carte"><img src="img//meme-47.jpg"></td>
+                    <td class="carte"><img src="img//meme-48.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-49.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-50.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-51.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-52.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-53.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-54.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-55.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-56.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-57.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-58.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-59.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-60.jpg"></td>
+                    <td class="carte"><img src="img//meme-49.jpg"></td>
+                    <td class="carte"><img src="img//meme-50.jpg"></td>
+                    <td class="carte"><img src="img//meme-51.jpg"></td>
+                    <td class="carte"><img src="img//meme-52.jpg"></td>
+                    <td class="carte"><img src="img//meme-53.jpg"></td>
+                    <td class="carte"><img src="img//meme-54.jpg"></td>
+                    <td class="carte"><img src="img//meme-55.jpg"></td>
+                    <td class="carte"><img src="img//meme-56.jpg"></td>
+                    <td class="carte"><img src="img//meme-57.jpg"></td>
+                    <td class="carte"><img src="img//meme-58.jpg"></td>
+                    <td class="carte"><img src="img//meme-59.jpg"></td>
+                    <td class="carte"><img src="img//meme-60.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-61.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-1.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-63.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-64.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-65.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-66.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-67.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-68.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-69.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-70.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-71.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-72.jpg"></td>
+                    <td class="carte"><img src="img//meme-61.jpg"></td>
+                    <td class="carte"><img src="img//meme-1.jpg"></td>
+                    <td class="carte"><img src="img//meme-63.jpg"></td>
+                    <td class="carte"><img src="img//meme-64.jpg"></td>
+                    <td class="carte"><img src="img//meme-65.jpg"></td>
+                    <td class="carte"><img src="img//meme-66.jpg"></td>
+                    <td class="carte"><img src="img//meme-67.jpg"></td>
+                    <td class="carte"><img src="img//meme-68.jpg"></td>
+                    <td class="carte"><img src="img//meme-69.jpg"></td>
+                    <td class="carte"><img src="img//meme-70.jpg"></td>
+                    <td class="carte"><img src="img//meme-71.jpg"></td>
+                    <td class="carte"><img src="img//meme-72.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
-                    <td class="carte"><img src="img/Meme/meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
+                    <td class="carte"><img src="img//meme-24.jpg"></td>
                 </tr>
             </table></div>
     

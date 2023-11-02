@@ -28,6 +28,7 @@ $page = 'Jeu'; ?>
 
 <div id="fileSelect_diff">
                 <select id="select_diff" name="Difficultés">
+                <option value="Difficultees">Choisir la difficultée </option>
                     <option value="Easy">Easy </option>
                     <option value="Medium"> Medium</option>
                     <option value="Hard"> Hard</option>
@@ -37,7 +38,8 @@ $page = 'Jeu'; ?>
 
 <div id="fileSelect_themes">
                 <select id="select_themes" name="Themes">
-                    <option value= "Memes" »>Memes </option>
+                <option value="themess">Thèmes </option>
+                    <option value= "Memes">Memes </option>
                     <option value= "DBZ"> DBZ</option>
                     <option value= "Nourriture"> Nourriture</option>
 
