@@ -43,17 +43,21 @@ if(select.value == ''){
                 console.log(reg.test(password))
                 if (reg.test(password)) {
                   if (length > 7) {
-                    strengthText.textContent = "Fort";
+                    strengthText.textContent = "Mot de Passe Fort";
+                    strengthText.style.color = "green";
                     progressBar.style.backgroundColor = "green";
                   } else {
-                    strengthText.textContent = "Moyen";
+                    strengthText.textContent = " Mot de Passe Moyen";
+                    strengthText.style.color = "orange";
                     progressBar.style.backgroundColor = "orange";
                   }
                 } else if (length > 8) {
-                  strengthText.textContent = "Moyen";
+                  strengthText.textContent = "Mot de Passe Moyen";
+                  strengthText.style.color = "orange";
                   progressBar.style.backgroundColor = "orange";
                 } else {
-                  strengthText.textContent = "Faible";
+                  strengthText.textContent = "Mot de Passe Faible";
+                  strengthText.style.color = "red";
                   progressBar.style.backgroundColor = "red";
                 }
               }
