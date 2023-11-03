@@ -16,7 +16,7 @@ $pdo = connectToDbAndGetPdo();
 <body>
     <?php require_once SITE_ROOT . ('partials/header.php') ?>
     <div class="image-container">
-        <h1 class="titre1">Inscription</h1>
+        <h1 class="title-bo">Inscription</h1>
     </div>
 
     <form method="POST" class="register-form">
@@ -42,7 +42,7 @@ $pdo = connectToDbAndGetPdo();
             <?php if (isset($_POST['pseudo'])) :
                 if (strlen($_POST['pseudo']) < 5) : ?>
                     <p class="erreurPseudo_carac"> Pseudo insérer en dessous de 4 caractères.</p>
-            
+
             <?php endif;
             endif ?>
 
@@ -52,13 +52,17 @@ $pdo = connectToDbAndGetPdo();
             <?php endif;
             endif ?>
 
-            <input type="password" name="password" class="case1" placeholder="Mot de passe" required="required"><br><br>
-
+            <input type="password" name="password" id="passwordInput" class="case1" placeholder="Mot de passe" onkeyup="checkPasswordStrength()" required="required"><br><br>
+            <div class="progress">
+                <div id="progressBar" class="progress-bar" role="progressbar"></div>
+            </div>
+            <p id="strengthText"></p>
             <?php if (isset($_POST['password'])) :
                 if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/i", ($_POST['password']))) :
                     $hashagemdp = password_hash($_POST['password'], PASSWORD_DEFAULT);
             ?>
                     <p class="passwordCorrect"> Le mot de passe n'est pas correct</p>
+
 
             <?php endif;
             endif ?>
@@ -95,7 +99,7 @@ if (
 
 
 ) {
-    
+
     InsererUnUtilisateur($_POST['pseudo'], $_POST['mail'], $_POST['password'])
 
 
@@ -110,5 +114,6 @@ if (
 
 
 <?php require_once SITE_ROOT . ('partials/footer.php') ?>
+<script src="script.js"></script>
 
 </html>

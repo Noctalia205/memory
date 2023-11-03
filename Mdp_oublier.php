@@ -10,7 +10,7 @@ $page = 'Connexion';?>
 
 
 <div class="image-container">
-    <h1 class="titre1">Mot de Passe</h1>
+    <h1 class="title-bo">Mot de Passe</h1>
 
     </div>
 </div>
